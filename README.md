@@ -2,8 +2,8 @@
 
 이 Repo는 IoT 장치를 Cat.M1, WiFi, Ethernet을 이용하여 Azure IoT Hub에 연결하고 Azure의 다른 서비스(DB, 대시보드 등)와 연동하기 위해 작성되었습니다.
 
-# 사전준비
-Azure IoT Hub 연동 준비
+# 사전준비(작성중)
+Azure IoT Hub 연동
 
 # Cat.M1
 ST MCU와 Cat.M1 모듈을 이용하여 Azure IoT Hub에 연결하기(준비중)

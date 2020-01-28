@@ -17,7 +17,7 @@
 
 	3. [WizFi360 설정](#Step-3-Setting_WizFi360)
 
-	4. [IoT Hub에서 수신한 Data 읽기](#Step-4-Read_Message_From_IoT_Hub)
+	4. [IoT Hub에서 수신한 Data 읽기](#Step-4-Read_Data_From_IoT_Hub)
 
 - [다음 단계](#Next)
 
@@ -73,8 +73,8 @@
 
 
 
-<a name="Step-4-Read_Message_From_IoT_Hub"></a>
-### 4. IoT Hub에서 수신한 Message 읽기
+<a name="Step-4-Read_Data_From_IoT_Hub"></a>
+### 4. IoT Hub에서 수신한 Data 읽기
 
 
 

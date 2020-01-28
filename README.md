@@ -22,4 +22,4 @@ PC와 WizFi360(MQTT AT Command)을 이용하여 Azure IoT Hub에 연결하기(�
 PC와 WizFi360(Azure AT Command)을 이용하여 Azure IoT Hub에 연결하기(링크 준비중)
 
 ## Ethernet
-WIZ-ASG-200를 이용하여 Azure IoT Hub에 연결하기(링크 준비중)
+[WIZ-ASG-200를 이용하여 Azure IoT Hub에 연결하기](https://docs.microsoft.com/ko-kr/azure-sphere/app-development/use-azure-iot)

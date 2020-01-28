@@ -46,11 +46,15 @@
 - IoT Hub에서 수신한 Data 읽는 방법
 
 
+
 <a name="Required_Item"></a>
 ## 필요한 항목
-- WizFi360-EVB
+<center>![][Link-Required_Item]</center>
+
+- [WizFi360-EVB-Shield][Link-WizFi360-EVB-Shield]
 
 - Micro 5 pin USB Cable
+
 
 
 <a name="Example"></a>
@@ -80,3 +84,8 @@
 
 <a name="Next"></a>
 ## 다음 단계
+
+
+
+[Link-WizFi360-EVB-Shield]: https://wizwiki.net/wiki/doku.php/products:wizfi360:start
+[Link-Required_Item]: ./images/standalone_mqtt_atcmd_wizfi360_required_item.png

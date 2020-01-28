@@ -1,0 +1,11 @@
+stm32l496g-discovery\exe\riotkdf.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/deps/RIoT/Emulator/RIoT/RIoTCrypt/RiotKdf.c
+stm32l496g-discovery\exe\riotkdf.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+stm32l496g-discovery\exe\riotkdf.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/deps/RIoT/Emulator/RIoT/RIoTCrypt/include/RiotKdf.h
+stm32l496g-discovery\exe\riotkdf.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/deps/RIoT/Emulator/RIoT/RIoTCrypt/include/RiotHmac.h
+stm32l496g-discovery\exe\riotkdf.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/deps/RIoT/Emulator/RIoT/RIoTCrypt/include/RiotTarget.h
+stm32l496g-discovery\exe\riotkdf.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+stm32l496g-discovery\exe\riotkdf.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+stm32l496g-discovery\exe\riotkdf.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+stm32l496g-discovery\exe\riotkdf.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+stm32l496g-discovery\exe\riotkdf.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/deps/RIoT/Emulator/RIoT/RiotStatus.h
+stm32l496g-discovery\exe\riotkdf.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/deps/RIoT/Emulator/RIoT/RIoTCrypt/include/RiotSha256.h

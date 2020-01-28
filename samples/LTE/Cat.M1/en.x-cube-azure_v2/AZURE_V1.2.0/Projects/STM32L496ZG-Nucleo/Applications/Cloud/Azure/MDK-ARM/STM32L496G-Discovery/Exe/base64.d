@@ -1,0 +1,13 @@
+stm32l496g-discovery\exe\base64.o: ../../../../../../Middlewares/Third_Party/mbedTLS/library/base64.c
+stm32l496g-discovery\exe\base64.o: ../Inc/mbedtls_config.h
+stm32l496g-discovery\exe\base64.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/check_config.h
+stm32l496g-discovery\exe\base64.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+stm32l496g-discovery\exe\base64.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/base64.h
+stm32l496g-discovery\exe\base64.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+stm32l496g-discovery\exe\base64.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+stm32l496g-discovery\exe\base64.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+stm32l496g-discovery\exe\base64.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/platform.h
+stm32l496g-discovery\exe\base64.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/platform_time.h
+stm32l496g-discovery\exe\base64.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
+stm32l496g-discovery\exe\base64.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+stm32l496g-discovery\exe\base64.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

@@ -88,4 +88,4 @@
 
 
 [Link-WizFi360-EVB-Shield]: https://wizwiki.net/wiki/doku.php/products:wizfi360:start
-[Link-Required_Item]: ./images/standalone_mqtt_atcmd_wizfi360_required_item.png
+[Link-Required_Item]: images/standalone_mqtt_atcmd_wizfi360_required_item.png

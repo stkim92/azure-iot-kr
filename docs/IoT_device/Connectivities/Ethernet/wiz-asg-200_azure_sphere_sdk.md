@@ -1,4 +1,5 @@
-# WIZnet Azure IoT Documents and Samples
+# WIZ-ASG-200를 이용하여 Azure IoT Hub에 연결하기(Azure Sphere Guardian)
 
-이 저장소에는 다음 자료들이 포함되어 있습니다.
-ing..
+[Azure Sphere에서 이더넷에 연결](https://docs.microsoft.com/ko-kr/azure-sphere/network/connect-ethernet)
+
+[WIZ-ASG-200를 이용하여 Azure IoT Hub에 연결하기](https://docs.microsoft.com/ko-kr/azure-sphere/app-development/use-azure-iot)

@@ -1,0 +1,9 @@
+stm32l496g-discovery\exe\parson.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/deps/parson/parson.c
+stm32l496g-discovery\exe\parson.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/deps/parson/parson.h
+stm32l496g-discovery\exe\parson.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+stm32l496g-discovery\exe\parson.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+stm32l496g-discovery\exe\parson.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+stm32l496g-discovery\exe\parson.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+stm32l496g-discovery\exe\parson.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+stm32l496g-discovery\exe\parson.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+stm32l496g-discovery\exe\parson.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\errno.h

@@ -1,0 +1,1 @@
+stm32l496g-discovery_2_images_secorebin\startup_stm32l496xx.o: startup_stm32l496xx.s

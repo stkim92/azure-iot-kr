@@ -1,0 +1,134 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;/******************************************************
+                       ************************
+    2 00000000         ;* File Name          : se_stack_smuggler_ARM.s
+    3 00000000         ;* Author             : MCD Application Team
+    4 00000000         ;* Description        : Switch SP from SB to SE RAM regi
+                       on.
+    5 00000000         ;*******************************************************
+                       ************************
+    6 00000000         ;*  @attention
+    7 00000000         ;* 
+    8 00000000         ;*  <h2><center>&copy; Copyright (c) 2017 STMicroelectro
+                       nics.
+    9 00000000         ;*  All rights reserved.</center></h2>
+   10 00000000         ;* 
+   11 00000000         ;*  This software component is licensed by ST under Ulti
+                       mate Liberty license
+   12 00000000         ;*  SLA0044, the "License"; You may not use this file ex
+                       cept in compliance with
+   13 00000000         ;*  the License. You may obtain a copy of the License at
+                       :
+   14 00000000         ;*                              www.st.com/SLA0044
+   15 00000000         ;* 
+   16 00000000         ;*******************************************************
+                       ************************
+   17 00000000         ;
+   18 00000000                 AREA             |.text|, CODE
+   19 00000000                 EXPORT           SE_SP_SMUGGLE
+   20 00000000         ;SE_SP_SMUGGLE(SE_FunctionIDTypeDef eID, SE_StatusTypeDe
+                       f *peSE_Status, ...)
+   21 00000000         ;R0 and R1 are used to call with new stack SE_CallGateSe
+                       rvice
+   22 00000000                 PRESERVE8        {TRUE}
+   23 00000000                 IMPORT           |Image$$SE_region_SRAM1$$Base|
+   24 00000000                 IMPORT           SE_CallGateService
+   25 00000000         SE_SP_SMUGGLE
+   26 00000000         ; SP - 8
+   27 00000000 E92D 4800       PUSH             {R11,LR}
+   28 00000004         ; retrieve SP value on R11
+   29 00000004 46EB            MOV              R11, SP
+   30 00000006         ; CHANGE SP
+   31 00000006 F8DF D018       LDR              SP, =|Image$$SE_region_SRAM1$$B
+ase|
+   32 0000000A         ; Let 4 bytes to store appli vector 
+   33 0000000A B081            SUB              SP, SP, #4
+   34 0000000C         ; push R11 on new stack
+   35 0000000C F84D BD04       PUSH             {R11}
+   36 00000010 F7FF FFFE       BL               SE_CallGateService
+   37 00000014         ; retrieve previous stack
+   38 00000014 F85D BB04       POP              {R11}
+   39 00000018         ; put new stack
+   40 00000018 46DD            MOV              SP, R11
+   41 0000001A E8BD 4800       POP              {R11, LR}
+   42 0000001E         ; return
+   43 0000001E 4770            BX               LR
+   44 00000020                 ALIGN            4           ; now aligned on 4-
+                                                            byte boundary
+   45 00000020                 END
+              00000000 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+erwork --depend=stm32l496g-discovery_2_images_secorebin\se_stack_smuggler_arm.d
+ -ostm32l496g-discovery_2_images_secorebin\se_stack_smuggler_arm.o -ID:\en.x-cu
+be-azure3\STM32CubeExpansion_Cloud_AZURE_V1.2.0\Projects\32L496GDISCOVERY\Appli
+cations\BootLoader_OSC\2_Images_SECoreBin\MDK-ARM\RTE -ID:\Keil_v5\ARM\PACK\ARM
+\CMSIS\4.5.0\CMSIS\Include -ID:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.2.0\Drive
+rs\CMSIS\Device\ST\STM32L4xx\Include --predefine="__MICROLIB SETA 1" --predefin
+e="__UVISION_VERSION SETA 521" --predefine="_RTE_ SETA 1" --predefine="STM32L49
+6xx SETA 1" --list=se_stack_smuggler_arm.lst ../../../../../../Middlewares/ST/S
+TM32_Secure_Engine/Core/se_stack_smuggler_ARM.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 18 in file ../../../../../../Middlewares/ST/STM32_Secure_Engine/C
+ore/se_stack_smuggler_ARM.s
+   Uses
+      None
+Comment: .text unused
+SE_SP_SMUGGLE 00000000
+
+Symbol: SE_SP_SMUGGLE
+   Definitions
+      At line 25 in file ../../../../../../Middlewares/ST/STM32_Secure_Engine/C
+ore/se_stack_smuggler_ARM.s
+   Uses
+      At line 19 in file ../../../../../../Middlewares/ST/STM32_Secure_Engine/C
+ore/se_stack_smuggler_ARM.s
+Comment: SE_SP_SMUGGLE used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+Image$$SE_region_SRAM1$$Base 00000000
+
+Symbol: Image$$SE_region_SRAM1$$Base
+   Definitions
+      At line 23 in file ../../../../../../Middlewares/ST/STM32_Secure_Engine/C
+ore/se_stack_smuggler_ARM.s
+   Uses
+      At line 31 in file ../../../../../../Middlewares/ST/STM32_Secure_Engine/C
+ore/se_stack_smuggler_ARM.s
+Comment: Image$$SE_region_SRAM1$$Base used once
+SE_CallGateService 00000000
+
+Symbol: SE_CallGateService
+   Definitions
+      At line 24 in file ../../../../../../Middlewares/ST/STM32_Secure_Engine/C
+ore/se_stack_smuggler_ARM.s
+   Uses
+      At line 36 in file ../../../../../../Middlewares/ST/STM32_Secure_Engine/C
+ore/se_stack_smuggler_ARM.s
+Comment: SE_CallGateService used once
+2 symbols
+341 symbols in table

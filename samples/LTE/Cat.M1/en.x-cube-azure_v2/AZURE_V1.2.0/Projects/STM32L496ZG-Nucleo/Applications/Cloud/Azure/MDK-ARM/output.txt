@@ -1,0 +1,15 @@
+block size =16
+number of segment :3
+0x80ecdc8
+0x80ed340
+number of segment :3
+0x80001ac
+0x8007e1c
+Merging
+SBSFU Base = 0x8000000
+Writing header = 0x8080800
+APPLI Base = 0x8080a00
+Writing to .\\PostBuild\\\\SBSFU_STM32L496G-Discovery_Azure.bin 971584
+"Generating the global elf file (SBSFU and userApp)" 
+지정된 경로를 찾을 수 없습니다.
+""C:\\Program Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin\\STM32_Programmer_CLI" -ms STM32L496G-Discovery\Exe\STM32L496G-Discovery_Azure.axf .\\PostBuild\\\\STM32L496G-Discovery_Azuresfuh.bin D:\en.x-cube-azure3\STM32CubeExpansion_Cloud_AZURE_V1.2.0\Projects\32L496GDISCOVERY\Applications\BootLoader_OSC\2_Images_SECoreBin\MDK-ARM\\\..\\..\\2_Images_SBSFU\\MDK-ARM\\STM32L496G-Discovery_2_Images_SBSFU\\SBSFU.axf >> .\output.txt 2>&1 : failed" 

@@ -14,7 +14,7 @@ ST MCU와 Cat.M1 모듈을 이용하여 Azure IoT Hub에 연결하기(준비중)
 PC와 Cat.m1모듈을 이용하여 Azure IoT Hub에 연결하기(준비중)
 
 # WiFi
-WizFi630S를 이용하여 Azure IoT Hub에 연결하기
+WizFi630S를 이용하여 Azure IoT Hub에 연결하기(준비중)
 
 PC와 WizFi360(MQTT AT Command)을 이용하여 Azure IoT Hub에 연결하기(준비중)
 

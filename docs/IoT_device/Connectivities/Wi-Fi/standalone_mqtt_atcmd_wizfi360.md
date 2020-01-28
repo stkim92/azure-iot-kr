@@ -49,7 +49,7 @@
 
 <a name="Required_Item"></a>
 ## 필요한 항목
-<center>![][Link-Required_Item]</center>
+![][Link-Required_Item]
 
 - [WizFi360-EVB-Shield][Link-WizFi360-EVB-Shield]
 

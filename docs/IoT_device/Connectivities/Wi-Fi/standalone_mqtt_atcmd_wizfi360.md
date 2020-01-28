@@ -50,7 +50,7 @@
 ## 필요한 항목
 - WizFi360-EVB
 
-- Micro 5 pin Cable
+- Micro 5 pin USB Cable
 
 
 <a name="Example"></a>

@@ -28,7 +28,7 @@
 <a name="What_To_Do"></a>
 ## 시작하기 전에
 
-#####Hardware Requirement
+##### Hardware Requirement
 -   Desktop or laptop computer
 -   MicroUSB 케이블
 - 	MS Azure Account (Azure 구독이 아직 없는 경우 체험 무료[계정]을 만듭니다.)

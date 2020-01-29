@@ -96,13 +96,25 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
 1. Azure Portal에서 **리소스 만들기** > **사물 인터넷** > **IoT Hub**를 선택합니다.
 
+![][Link-Create_IoT_Hub_1]
+
+![][Link-Create_IoT_Hub_2]
+
 2. **기본 사항**을 입력합니다. **리소스 그룹**을 **새로 만들기**를 선택하여 생성합니다.
+
+![][Link-Create_IoT_Hub_5]
 
 3. **크키 및 배율**을 설정합니다. **가격 및 크기 계층**을 **F1:무료 계층**으로 선택합니다.
 
+![][Link-Create_IoT_Hub_6]
+
 4. **검토 + 만들기**를 선택합니다.
 
+![][Link-Create_IoT_Hub_7]
+
 5. 모든 항목을 입력 및 설정을 하였다면, **만들기**를 눌러 IoT Hub를 생성합니다. IoT Hub를 생성 시, 몇 분정도의 시간이 소요가 될 수 있습니다.
+
+![][Link-Create_IoT_Hub_8]
 
 
 
@@ -202,3 +214,9 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 [Link-WizFi360-EVB-Shield]: https://wizwiki.net/wiki/doku.php/products:wizfi360:start
 [Link-Azure-Portal]: https://portal.azure.com/
 [Link-Azure-Account-Free]: https://azure.microsoft.com/ko-kr/free/
+[Link-Create_IoT_Hub_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_iot_hub_1.png
+[Link-Create_IoT_Hub_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_iot_hub_2.png
+[Link-Create_IoT_Hub_5]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_iot_hub_5.png
+[Link-Create_IoT_Hub_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_iot_hub_6.png
+[Link-Create_IoT_Hub_7]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_iot_hub_7.png
+[Link-Create_IoT_Hub_8]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_iot_hub_8.png

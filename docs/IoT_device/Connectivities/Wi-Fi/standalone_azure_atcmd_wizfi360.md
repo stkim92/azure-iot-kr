@@ -132,7 +132,7 @@ Defined values:
 Syntax:
 
 | Type | Command | Response |
-|:--------||:--------|:--------|
+|:--------|:--------|:--------|
 | Set | AT+AZSET=&lt;iothub_name&gt;,&lt;device_id&gt;,&lt;device_key&gt; | OK |
 
 Defined values:
@@ -150,7 +150,7 @@ Defined values:
 Syntax:
 
 | Type | Command | Response |
-|:--------||:--------|:--------|
+|:--------|:--------|:--------|
 | Set | AT+MQTTTOPIC=&lt;publish topic&gt;,&lt;subscribe topic&gt;,&lt;subscribe topic2&gt;,&lt;subscribe topic3&gt; | OK |
 
 Defined values:
@@ -173,7 +173,7 @@ Defined values:
 Syntax:
 
 | Type | Command | Response |
-|:--------||:--------|:--------|
+|:--------|:--------|:--------|
 | Set | AT+AZCON | CONNECT <br> OK |
 > Note:
 • 이 command 를 전송하기전에 AT+AZSET command 와 AT+MQTTTOPIC command 를 설정합니다.

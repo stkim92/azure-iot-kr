@@ -160,10 +160,14 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 ### 5. Stream Analytics 생성
 
 1. Azure Portal에서 **리소스 만들기** > **분석** > **Stream Analytics job**을 선택합니다.
+![][Link-Create_Stream_Analytics_1]
+![][Link-Create_Stream_Analytics_3]
 
 2. **작업 이름**을 입력하고 나머지 항목을 다음 그림과 같이 입력 및 설정합니다.
+![][Link-Create_Stream_Analytics_5]
 
 3. **만들기**를 하여 생성합니다.
+![][Link-Create_Stream_Analytics_6]
 
 
 
@@ -244,3 +248,7 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 [Link-Create_Blob_Storage_10]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_blob_storage_10.png
 [Link-Create_Blob_Storage_11]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_blob_storage_11.png
 [Link-Create_Blob_Storage_12]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_blob_storage_12.png
+[Link-Create_Stream_Analytics_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_stream_analytics_1.png
+[Link-Create_Stream_Analytics_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_stream_analytics_3.png
+[Link-Create_Stream_Analytics_5]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_stream_analytics_5.png
+[Link-Create_Stream_Analytics_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_stream_analytics_6.png

@@ -123,11 +123,23 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
 1. IoT Hub에서 **탐색기** > **IoT 디바이스** > **새로 만들기**를 선택합니다.
 
+![][Link-Create_IoT_Device_2]
+
 2. **디바이스 ID**를 입력하고 **저장**을 하여 생성합니다.
+
+![][Link-Create_IoT_Device_4]
 
 3. IoT Device 생성 후, 목록에서 **Device를 선택하여 엽니다.**
 
+![][Link-Create_IoT_Device_5]
+
+![][Link-Create_IoT_Device_6]
+
 4. **기본 연결 문자열**을 복사하여 메모장과 같은 별도의 파일에 **저장**을 합니다.
+
+![][Link-Create_IoT_Device_7]
+
+![][Link-Create_IoT_Device_8]
 
 
 
@@ -220,3 +232,9 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 [Link-Create_IoT_Hub_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_iot_hub_6.png
 [Link-Create_IoT_Hub_7]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_iot_hub_7.png
 [Link-Create_IoT_Hub_8]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_iot_hub_8.png
+[Link-Create_IoT_Device_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_iot_device_2.png
+[Link-Create_IoT_Device_4]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_iot_device_4.png
+[Link-Create_IoT_Device_5]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_iot_device_5.png
+[Link-Create_IoT_Device_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_iot_device_6.png
+[Link-Create_IoT_Device_7]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_iot_device_7.png
+[Link-Create_IoT_Device_8]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_iot_device_8.png

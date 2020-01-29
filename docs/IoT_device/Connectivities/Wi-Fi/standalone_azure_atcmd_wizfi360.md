@@ -204,10 +204,10 @@ Syntax:
 
 1. [Azure Portal]에 로그인합니다.
 2. **리소스 만들기 > 사물 인터넷 > IoT Hub**를 선택합니다.
-![](./images/create_hub.jpg)
+![](/images/create_hub.jpg)
 3. IoT Hub 창에서 다음 정보를 입력합니다.
 4. 완료되면 다음: 크기 및 규모 설정을 선택합니다.
-![](./images/iot-hub-size-and-scale.png)
+![](/images/iot-hub-size-and-scale.png)
 5. 가격 책정 및 규모 계층을 선택합니다. 이 빠른 시작의 경우 구독에서 아직 사용할 수 있다면 F1 - 무료 계층을 선택합니다.
 6. 검토 + 만들기를 선택합니다. IoT Hub 정보를 검토하고 만들기를 클릭합니다. IoT Hub를 만드는 데 몇 분 정도 걸릴 수 있습니다. 알림 창에서 진행 상황을 모니터링할 수 있습니다.
 
@@ -215,19 +215,19 @@ Syntax:
 ### 2. IoT Hub에 Device 등록
 
 1. IoT Hub 탐색 메뉴의 IoT 디바이스 아래에서 추가를 클릭합니다. 디바이스 ID를 추가하고 저장을 클릭합니다.
-![](./images/add-device-iot-hub.png)
+![](/images/add-device-iot-hub.png)
 2. 디바이스가 만들어진 후에 IoT 디바이스 목록에서 디바이스를 엽니다.
 
 <a name="Step-3-Setting_DeviceExplorer"></a>
 ### 3. Device Explorer 설정
 
 1. IoT Hub > Shared access policies > iothubowner 클릭하여 connection string primary key 복사합니다.
-![](./images/hubownerstring.jpg)
+![](/images/hubownerstring.jpg)
 2. Device Explorer 다운로드 후 실행합니다.
 3. Configuration 탭에서 iothubowner connection string 붙여넣습니다.
 
 4. Update 버튼을 클릭합니다.
-![](./images/rpi2_deviceexplorer01.png)
+![](/images/rpi2_deviceexplorer01.png)
 <a name="Step-4-Setting_WizFi360"></a>
 ### 4. WizFi360 설정
 
@@ -292,7 +292,7 @@ Syntax:
 |:--------|:--------|
 | AT+MQTTPUB="{"deviceId":"WizFi360","temperature":28.16,"humidity":46.04}" | OK |
 
-![](./images/Token2Shell.jpg)
+![](/images/Token2Shell.jpg)
 
 <a name="Step-5-Read_Data_From_IoT_Hub"></a>
 ### 5. Device Explorer에서 수신한 Data 읽기
@@ -300,7 +300,7 @@ Syntax:
 1. Device Explorer 에서 Monitor 버튼을 클릭합니다.
 2. 터미널에서 MQTTPUB command으로 수신한 데이터를 확인 할 수 있습니다.
 
-![](./images/Device Explorer screenshot.PNG)
+![](/images/Device Explorer screenshot.PNG)
 <a name="Next"></a>
 ## 다음 단계
 

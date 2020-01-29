@@ -95,25 +95,19 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 ### 2. IoT Hub 생성
 
 1. Azure Portal에서 **리소스 만들기** > **사물 인터넷** > **IoT Hub**를 선택합니다.
-
 ![][Link-Create_IoT_Hub_1]
-
 ![][Link-Create_IoT_Hub_2]
 
 2. **기본 사항**을 입력합니다. **리소스 그룹**을 **새로 만들기**를 선택하여 생성합니다.
-
 ![][Link-Create_IoT_Hub_5]
 
 3. **크키 및 배율**을 설정합니다. **가격 및 크기 계층**을 **F1:무료 계층**으로 선택합니다.
-
 ![][Link-Create_IoT_Hub_6]
 
 4. **검토 + 만들기**를 선택합니다.
-
 ![][Link-Create_IoT_Hub_7]
 
-5. 모든 항목을 입력 및 설정을 하였다면, **만들기**를 눌러 IoT Hub를 생성합니다. IoT Hub를 생성 시, 몇 분정도의 시간이 소요가 될 수 있습니다.
-
+5. 모든 항목을 입력 및 설정을 하였다면, **만들기**를 눌러 **IoT Hub를 생성**합니다. IoT Hub를 생성 시, 몇 분정도의 시간이 소요가 될 수 있습니다.
 ![][Link-Create_IoT_Hub_8]
 
 
@@ -122,23 +116,17 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 ### 3. IoT Device 생성
 
 1. IoT Hub에서 **탐색기** > **IoT 디바이스** > **새로 만들기**를 선택합니다.
-
 ![][Link-Create_IoT_Device_2]
 
-2. **디바이스 ID**를 입력하고 **저장**을 하여 생성합니다.
-
+2. **디바이스 ID**를 입력하고 **저장**을 하여 **IoT Device를** 생성합니다.
 ![][Link-Create_IoT_Device_4]
 
 3. IoT Device 생성 후, 목록에서 **Device를 선택하여 엽니다.**
-
 ![][Link-Create_IoT_Device_5]
-
 ![][Link-Create_IoT_Device_6]
 
 4. **기본 연결 문자열**을 복사하여 메모장과 같은 별도의 파일에 **저장**을 합니다.
-
 ![][Link-Create_IoT_Device_7]
-
 ![][Link-Create_IoT_Device_8]
 
 
@@ -147,14 +135,24 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 ### 4. Blob Storage 생성
 
 1. Azure Portal에서 **리소스 만들기** > **저장소** > **Storage 계정**을 선택합니다.
+![][Link-Create_Blob_Storage_1]
+![][Link-Create_Blob_Storage_2]
 
 2. **기본 사항**을 입력 및 설정합니다. 자신이 만든 **IoT Hub와 동일한 리소스 그룹 및 위치**를 선택합니다.
+![][Link-Create_Blob_Storage_4]
 
 3. **검토 + 만들기**를 선택합니다.
+![][Link-Create_Blob_Storage_5]
 
-4. Blob Storage 생성 후, **개요** > **컨테이너** > **+ 컨테이너**를 선택합니다.
+4. 모든 항목을 입력 및 설정을 하였다면, **만들기**를 눌러 **Blob Storage를 생성**합니다.
+![][Link-Create_Blob_Storage_6]
 
-5. Container의 **이름**을 입력 후, 확인을 눌러 **Container를 생성**합니다.
+5. Blob Storage 생성 후, **개요** > **컨테이너** > **+ 컨테이너**를 선택합니다.
+![][Link-Create_Blob_Storage_10]
+![][Link-Create_Blob_Storage_11]
+
+6. Container의 **이름**을 입력 후, **확인**을 눌러 **Container를 생성**합니다.
+![][Link-Create_Blob_Storage_12]
 
 
 
@@ -238,3 +236,11 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 [Link-Create_IoT_Device_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_iot_device_6.png
 [Link-Create_IoT_Device_7]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_iot_device_7.png
 [Link-Create_IoT_Device_8]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_iot_device_8.png
+[Link-Create_Blob_Storage_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_blob_storage_1.png
+[Link-Create_Blob_Storage_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_blob_storage_2.png
+[Link-Create_Blob_Storage_4]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_blob_storage_4.png
+[Link-Create_Blob_Storage_5]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_blob_storage_5.png
+[Link-Create_Blob_Storage_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_blob_storage_6.png
+[Link-Create_Blob_Storage_10]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_blob_storage_10.png
+[Link-Create_Blob_Storage_11]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_blob_storage_11.png
+[Link-Create_Blob_Storage_12]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_blob_storage_12.png

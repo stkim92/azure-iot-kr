@@ -49,7 +49,7 @@ Microsoft Azure 의 서비스에 [WizFi360] 을 연동하여 데이터를 클라
 
 WiFi모듈 테스트를 위해 [WizFi360-EVB-Shield] Evaluation 보드를 사용되었습니다.
 
-![](./images/standalone_mqtt_atcmd_wizfi360_required_item.png)
+![](/images/standalone_mqtt_atcmd_wizfi360_required_item.png)
 
 <a name="Required_Item"></a>
 ## AT 명령어

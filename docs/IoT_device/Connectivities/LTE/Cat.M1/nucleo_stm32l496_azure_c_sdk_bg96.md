@@ -94,14 +94,14 @@ WIZnet IoT Shield는 다양한 밴더의 Cat.M1 모듈을 활용 할 수 있도�
 ST에서 제공하는 X-CUBE-AZURE SDK의 32L496GDISCOVERY 프로젝트를 기반으로 다음과 같이 수정하였습니다.
 
 - **32L496GDISCOVERY(STM32L496AG) => STM32L496-Nucleo(STM32L496ZG)**
- - Virtual COM port UART: UART2 => LPUART1
- - Cat.M1 모듈과 통신하는 UART: USART1 => USART3
- - Cat.M1 모듈 PWR 핀: PD3 => PD15
- - Cat.M1 모듈 RST 핀: PB2 => PF13
+  - Virtual COM port UART: UART2 => LPUART1
+  - Cat.M1 모듈과 통신하는 UART: USART1 => USART3
+  - Cat.M1 모듈 PWR 핀: PD3 => PD15
+  - Cat.M1 모듈 RST 핀: PB2 => PF13
 
 - **Sequance Cat.M1 모듈 => WIoT-QC01(앰투앰넷 Cat.M1 모듈)**
- - APN 설정
- - IPv4 기반 주소 처리
+  - APN 설정
+  - IPv4 기반 주소 처리
 
 - **HAL 기반 ADC를 이용하여 WIZnet IoT Shield의 온도 센서 사용**
 

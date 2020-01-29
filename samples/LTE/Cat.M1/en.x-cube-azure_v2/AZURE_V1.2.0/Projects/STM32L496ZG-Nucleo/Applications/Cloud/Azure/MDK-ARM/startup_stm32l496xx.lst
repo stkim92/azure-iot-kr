@@ -770,13 +770,13 @@ ARM Macro Assembler    Page 12
   468 00000010                 END
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
 erwork --depend=stm32l496g-discovery\exe\startup_stm32l496xx.d -ostm32l496g-dis
-covery\exe\startup_stm32l496xx.o -I../Inc -ID:\en.x-cube-azure-stm32l496-nucleo
-\STM32_Cloud_AZURE_V1.2.0\Projects\STM32L496ZG-Nucleo\Applications\Cloud\Azure\
-MDK-ARM\RTE -ID:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include -ID:\Keil_v5\AR
-M\PACK\Keil\STM32L4xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include --pre
-define="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 521" --predefine
-="_RTE_ SETA 1" --predefine="STM32L496xx SETA 1" --list=startup_stm32l496xx.lst
- startup_stm32l496xx.s
+covery\exe\startup_stm32l496xx.o -I../Inc -I"D:\회사\1. 업무 관련\12. Azure Git
+\azure-iot-kr\samples\LTE\Cat.M1\en.x-cube-azure_v2\AZURE_V1.2.0\Projects\STM32
+L496ZG-Nucleo\Applications\Cloud\Azure\MDK-ARM\RTE" -ID:\Keil_v5\ARM\PACK\ARM\C
+MSIS\4.5.0\CMSIS\Include -ID:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.2.0\Drivers
+\CMSIS\Device\ST\STM32L4xx\Include --predefine="__MICROLIB SETA 1" --predefine=
+"__UVISION_VERSION SETA 521" --predefine="_RTE_ SETA 1" --predefine="STM32L496x
+x SETA 1" --list=startup_stm32l496xx.lst startup_stm32l496xx.s
 
 
 

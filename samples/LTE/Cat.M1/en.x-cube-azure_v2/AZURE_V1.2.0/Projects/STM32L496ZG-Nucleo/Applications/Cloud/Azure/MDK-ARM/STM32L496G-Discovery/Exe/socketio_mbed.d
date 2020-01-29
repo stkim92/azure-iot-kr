@@ -5,17 +5,3 @@ stm32l496g-discovery\exe\socketio_mbed.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\st
 stm32l496g-discovery\exe\socketio_mbed.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 stm32l496g-discovery\exe\socketio_mbed.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/socketio.h
 stm32l496g-discovery\exe\socketio_mbed.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/xio.h
-stm32l496g-discovery\exe\socketio_mbed.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/optionhandler.h
-stm32l496g-discovery\exe\socketio_mbed.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/macro_utils.h
-stm32l496g-discovery\exe\socketio_mbed.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/optimize_size.h
-stm32l496g-discovery\exe\socketio_mbed.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/umock_c_prod.h
-stm32l496g-discovery\exe\socketio_mbed.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/umock_c_prod.h
-stm32l496g-discovery\exe\socketio_mbed.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/xlogging.h
-stm32l496g-discovery\exe\socketio_mbed.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/agenttime.h
-stm32l496g-discovery\exe\socketio_mbed.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
-stm32l496g-discovery\exe\socketio_mbed.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/umock_c_prod.h
-stm32l496g-discovery\exe\socketio_mbed.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/umock_c_prod.h
-stm32l496g-discovery\exe\socketio_mbed.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/singlylinkedlist.h
-stm32l496g-discovery\exe\socketio_mbed.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-stm32l496g-discovery\exe\socketio_mbed.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/umock_c_prod.h
-stm32l496g-discovery\exe\socketio_mbed.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/tcpsocketconnection_c.h

@@ -5,15 +5,3 @@ stm32l496g-discovery\exe\platform_stm32cube.o: D:\Keil_v5\ARM\ARMCC\Bin\..\inclu
 stm32l496g-discovery\exe\platform_stm32cube.o: ../../../../../../Utilities/Time/timedate.h
 stm32l496g-discovery\exe\platform_stm32cube.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 stm32l496g-discovery\exe\platform_stm32cube.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/strings.h
-stm32l496g-discovery\exe\platform_stm32cube.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/umock_c_prod.h
-stm32l496g-discovery\exe\platform_stm32cube.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/macro_utils.h
-stm32l496g-discovery\exe\platform_stm32cube.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-stm32l496g-discovery\exe\platform_stm32cube.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
-stm32l496g-discovery\exe\platform_stm32cube.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/optimize_size.h
-stm32l496g-discovery\exe\platform_stm32cube.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/strings_types.h
-stm32l496g-discovery\exe\platform_stm32cube.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/platform.h
-stm32l496g-discovery\exe\platform_stm32cube.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/xio.h
-stm32l496g-discovery\exe\platform_stm32cube.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/optionhandler.h
-stm32l496g-discovery\exe\platform_stm32cube.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/umock_c_prod.h
-stm32l496g-discovery\exe\platform_stm32cube.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/umock_c_prod.h
-stm32l496g-discovery\exe\platform_stm32cube.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/umock_c_prod.h

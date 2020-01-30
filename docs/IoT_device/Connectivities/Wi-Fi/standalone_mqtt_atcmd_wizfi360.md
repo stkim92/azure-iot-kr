@@ -310,7 +310,7 @@ WizFi360의 조금 더 상세한 **사용 방법**은 [**Quick Start Guide**][Li
 
  ![][Link-Create_SAS_Token_6]
 
- ⑦ **TTL (Days)**에 값을 입력한 후, **Generate**를 눌러 생성합니다.
+ ⑦ **TTL(Days)** 값 입력한 후, **Generate**를 눌러 생성합니다.
 
  ![][Link-Create_SAS_Token_7]
 

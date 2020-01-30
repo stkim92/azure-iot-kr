@@ -259,54 +259,48 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 ### 9. WizFi360 설정 및 실행
 
 1. Mode 설정
-
-	| Command | Response |
-	|:--------|:--------|:--------|
-    | AT+CWMODE_CUR=1 | OK |
+| Command | Response |
+|:--------|:--------|
+| AT+CWMODE_CUR=1 | OK |
 
 2. DHCP 설정
-
-	| Command | Response |
-	|:--------|:--------|:--------|
-    | AT+CWDHCP_CUR=1,1 | OK |
+| Command | Response |
+|:--------|:--------|
+| AT+CWDHCP_CUR=1,1 | OK |
 
 3. AP 접속
-
-	| Command | Response |
-	|:--------|:--------|:--------|
-    | AT+CWJAP_CUR="**ssid**","**password**" <br><br> Example : <br> AT+CWJAP_CUR="**wiznet**","**0123456789**" | WIFI CONNECTED <br> WIFI GOT IP <br><br> OK |
+| Command | Response |
+|:--------|:--------|
+| AT+CWJAP_CUR="**ssid**","**password**" <br><br> Example : <br> AT+CWJAP_CUR="**wiznet**","**0123456789**" | WIFI CONNECTED <br> WIFI GOT IP <br><br> OK |
 
 4. MQTT 연결 설정
-
-	| Command | Response |
-	|:--------|:--------|:--------|
-    | AT+MQTTSET="**iot_hub_host_name**/**device_id**/?api-version=2018-06-30","**sas_token**","**device_id**",60<br><br> Example : <br> AT+MQTTSET="**MyWizFi360IoTHub.azure-devices.net**/**MyWizFi360IoTDevice**/?api-version=2018-06-30","**SharedAccessSignature sr=MyWizFi360IoTHub.azure-devices.net%2Fdevices%2FMyWizFi360IoTDevice&sig=LVYTZ1RvQxafv6%2BWrrk%2BvZz%2FbvZOoIMbBpPxg7cZtzA%3D&se=1611187403**","**MyWizFi360IoTDevice**",60 | OK |
+| Command | Response |
+|:--------|:--------|
+| AT+MQTTSET="**iot_hub_host_name**/**device_id**/?api-version=2018-06-30","**sas_token**","**device_id**",60<br><br> Example : <br> AT+MQTTSET="**MyWizFi360IoTHub.azure-devices.net**/**MyWizFi360IoTDevice**/?api-version=2018-06-30","**SharedAccessSignature sr=MyWizFi360IoTHub.azure-devices.net%2Fdevices%2FMyWizFi360IoTDevice&sig=LVYTZ1RvQxafv6%2BWrrk%2BvZz%2FbvZOoIMbBpPxg7cZtzA%3D&se=1611187403**","**MyWizFi360IoTDevice**",60 | OK |
 
 5. Topic 설정
-
-	| Command | Response |
-	|:--------|:--------|:--------|
-    | AT+MQTTTOPIC="devices/**device_id**/messages/events/",devices/**device_id**/messages/devicebound/# <br><br> Example : <br> AT+MQTTTOPIC="devices/**MyWizFi360IoTDevice**/messages/events/","devices/**MyWizFi360IoTDevice**/messages/devicebound/#" | OK |
+| Command | Response |
+|:--------|:--------|
+| AT+MQTTTOPIC="devices/**device_id**/messages/events/",devices/**device_id**/messages/devicebound/# <br><br> Example : <br> AT+MQTTTOPIC="devices/**MyWizFi360IoTDevice**/messages/events/","devices/**MyWizFi360IoTDevice**/messages/devicebound/#" | OK |
 
 6. Broker 연결
-
-	| Command | Response |
-	|:--------|:--------|:--------|
-    | AT+MQTTCON=1,"**iot_hub_host_name**",8883 <br><br> Example : <br> AT+MQTTCON=1,"**MyWizFi360IoTHub.azure-devices.net**",8883 | CONNECT <br><br> OK |
+| Command | Response |
+|:--------|:--------|
+| AT+MQTTCON=1,"**iot_hub_host_name**",8883 <br><br> Example : <br> AT+MQTTCON=1,"**MyWizFi360IoTHub.azure-devices.net**",8883 | CONNECT <br><br> OK |
 
 7. Publish Message
-
-	**Data를 Publish 할 때, Stream Analytics가 실행 중이어야 Blob Storage로 Data가 전달됩니다.**
-
-	| Command | Response |
-	|:--------|:--------|:--------|
-    | AT+MQTTPUB="publish_data" <br><br> Example : <br> AT+MQTTPUB="{"deviceId":"MyWizFi360IoTDevice","temperature":21.97,"humidity":43.58}"| OK |
-
-	```
-	Note :
-	Publish Data는 어떤 형태라도 가능하지만, Azure Guide의 Stream Analytics에서 작업 입력 구성 설정 중,
-    Event Serialization 형식이 기본 JSON 형태이므로 맞춰주어야 합니다.
-	```
+| Command | Response |
+|:--------|:--------|
+| AT+MQTTPUB="publish_data" <br><br> Example : <br> AT+MQTTPUB="{"deviceId":"MyWizFi360IoTDevice","temperature":21.97,"humidity":43.58}"| OK |
+```
+Note :
+Data를 Publish 할 때, Stream Analytics가 실행 중이어야 Blob Storage로 Data가 전달됩니다.
+```
+```
+Note :
+Publish Data는 어떤 형태라도 가능하지만, Azure Guide의 Stream Analytics에서 작업 입력 구성 설정 중,
+Event Serialization 형식이 기본 JSON 형태이므로 맞춰주어야 합니다.
+```
 
 ※ WizFi360의 **사용 방법**은 [**Quick Start Guide**][Link-WizFi360-Quick_Start_Guide], **AT Command**는 **[AT Instruction Set][Link-WizFi360-AT_Instruction_Set]**을 참고 바랍니다.
 
@@ -355,10 +349,10 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 [Link-Configure_Job_Input_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_configure_job_input_3.png
 [Link-Configure_Job_Input_5]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_configure_job_input_5.png
 [Link-Configure_Job_Input_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_configure_job_input_6.png
-[Link-Configure_Job_Output_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_configure_job_Output_2.png
-[Link-Configure_Job_Output_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_configure_job_Output_3.png
-[Link-Configure_Job_Output_5]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_configure_job_Output_5.png
-[Link-Configure_Job_Output_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_configure_job_Output_6.png
+[Link-Configure_Job_Output_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_configure_job_output_2.png
+[Link-Configure_Job_Output_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_configure_job_output_3.png
+[Link-Configure_Job_Output_5]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_configure_job_output_5.png
+[Link-Configure_Job_Output_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_configure_job_output_6.png
 [Link-Define_The_Transformation_Query_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_define_the_transformation_query_2.png
 [Link-Define_The_Transformation_Query_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_define_the_transformation_query_3.png
 [Link-Define_The_Transformation_Query_4]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_define_the_transformation_query_4.png

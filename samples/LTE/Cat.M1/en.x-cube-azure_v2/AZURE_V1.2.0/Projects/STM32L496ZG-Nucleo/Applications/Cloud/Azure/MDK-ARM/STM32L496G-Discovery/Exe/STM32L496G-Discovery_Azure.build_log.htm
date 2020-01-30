@@ -27,12 +27,12 @@ Project File Date:  01/28/2020
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 3 (build 300)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'STM32L496ZG-Nucleo'
-compiling hsm_client_riot_STM32Cube.c...
-"no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/adapters/hsm_client_riot_STM32Cube.c": No such file or directory
-../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/adapters/hsm_client_riot_STM32Cube.c: 0 warnings, 1 error
 compiling hsm_client_tpm_STM32Cube.c...
 "no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/adapters/hsm_client_tpm_STM32Cube.c": No such file or directory
 ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/adapters/hsm_client_tpm_STM32Cube.c: 0 warnings, 1 error
+compiling hsm_client_riot_STM32Cube.c...
+"no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/adapters/hsm_client_riot_STM32Cube.c": No such file or directory
+../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/adapters/hsm_client_riot_STM32Cube.c: 0 warnings, 1 error
 compiling platform_STM32Cube.c...
 ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/strings.h(7): error:  #5: cannot open source input file "azure_c_shared_utility/umock_c_prod.h": No such file or directory
   #include "azure_c_shared_utility/umock_c_prod.h"
@@ -52,13 +52,13 @@ compiling tickcounter_STM32Cube.c...
 ../Inc/main.h(32): error:  #5: cannot open source input file "azure_version.h": No such file or directory
   #include "azure_version.h"
 ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/adapters/tickcounter_STM32Cube.c: 0 warnings, 1 error
-compiling azure_sha1.c...
-"no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/iothub_client/samples/STM32Cube_sample/azure_sha1.c": No such file or directory
-../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/iothub_client/samples/STM32Cube_sample/azure_sha1.c: 0 warnings, 1 error
 compiling tlsio_mbedtls.c...
 ../Inc/main.h(32): error:  #5: cannot open source input file "azure_version.h": No such file or directory
   #include "azure_version.h"
 ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/c-utility/adapters/tlsio_mbedtls.c: 0 warnings, 1 error
+compiling azure_sha1.c...
+"no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/iothub_client/samples/STM32Cube_sample/azure_sha1.c": No such file or directory
+../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/iothub_client/samples/STM32Cube_sample/azure_sha1.c: 0 warnings, 1 error
 compiling azure_version.c...
 "no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/iothub_client/samples/STM32Cube_sample/azure_version.c": No such file or directory
 ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/iothub_client/samples/STM32Cube_sample/azure_version.c: 0 warnings, 1 error
@@ -69,26 +69,26 @@ compiling main.c...
 ../Inc/main.h(32): error:  #5: cannot open source input file "azure_version.h": No such file or directory
   #include "azure_version.h"
 ../Src/main.c: 0 warnings, 1 error
-compiling board_interrupts.c...
-../Inc/main.h(32): error:  #5: cannot open source input file "azure_version.h": No such file or directory
-  #include "azure_version.h"
-../Src/board_interrupts.c: 0 warnings, 1 error
 compiling mbedtls_entropy.c...
 ../Inc/main.h(32): error:  #5: cannot open source input file "azure_version.h": No such file or directory
   #include "azure_version.h"
 ../Src/mbedtls_entropy.c: 0 warnings, 1 error
+compiling board_interrupts.c...
+../Inc/main.h(32): error:  #5: cannot open source input file "azure_version.h": No such file or directory
+  #include "azure_version.h"
+../Src/board_interrupts.c: 0 warnings, 1 error
 compiling usart.c...
 ../Inc/main.h(32): error:  #5: cannot open source input file "azure_version.h": No such file or directory
   #include "azure_version.h"
 ../Src/usart.c: 0 warnings, 1 error
-compiling flash_l4.c...
-../Inc/main.h(32): error:  #5: cannot open source input file "azure_version.h": No such file or directory
-  #include "azure_version.h"
-../Src/flash_l4.c: 0 warnings, 1 error
 compiling stm32l4xx_hal_msp.c...
 ../Inc/main.h(32): error:  #5: cannot open source input file "azure_version.h": No such file or directory
   #include "azure_version.h"
 ../Src/stm32l4xx_hal_msp.c: 0 warnings, 1 error
+compiling flash_l4.c...
+../Inc/main.h(32): error:  #5: cannot open source input file "azure_version.h": No such file or directory
+  #include "azure_version.h"
+../Src/flash_l4.c: 0 warnings, 1 error
 compiling cloud.c...
 ../Inc/main.h(32): error:  #5: cannot open source input file "azure_version.h": No such file or directory
   #include "azure_version.h"
@@ -101,6 +101,10 @@ compiling rfu.c...
 ../Inc/main.h(32): error:  #5: cannot open source input file "azure_version.h": No such file or directory
   #include "azure_version.h"
 ../../../../../Misc_Utils/Src/rfu.c: 0 warnings, 1 error
+compiling set_credentials.c...
+../Inc/main.h(32): error:  #5: cannot open source input file "azure_version.h": No such file or directory
+  #include "azure_version.h"
+../Src/set_credentials.c: 0 warnings, 1 error
 compiling http_lib.c...
 ../Inc/main.h(32): error:  #5: cannot open source input file "azure_version.h": No such file or directory
   #include "azure_version.h"
@@ -109,20 +113,16 @@ compiling STM32CubeRTCInterface.c...
 ../Inc/main.h(32): error:  #5: cannot open source input file "azure_version.h": No such file or directory
   #include "azure_version.h"
 ../../../../../../Utilities/Time/STM32CubeRTCInterface.c: 0 warnings, 1 error
-compiling set_credentials.c...
+compiling timedate.c...
 ../Inc/main.h(32): error:  #5: cannot open source input file "azure_version.h": No such file or directory
   #include "azure_version.h"
-../Src/set_credentials.c: 0 warnings, 1 error
+../../../../../../Utilities/Time/timedate.c: 0 warnings, 1 error
 compiling iothub_security_factory.c...
 "no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/src/iothub_security_factory.c": No such file or directory
 ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/src/iothub_security_factory.c: 0 warnings, 1 error
 compiling prov_transport_mqtt_client.c...
 "no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/src/prov_transport_mqtt_client.c": No such file or directory
 ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/src/prov_transport_mqtt_client.c: 0 warnings, 1 error
-compiling timedate.c...
-../Inc/main.h(32): error:  #5: cannot open source input file "azure_version.h": No such file or directory
-  #include "azure_version.h"
-../../../../../../Utilities/Time/timedate.c: 0 warnings, 1 error
 compiling prov_transport_mqtt_common.c...
 "no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/src/prov_transport_mqtt_common.c": No such file or directory
 ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/src/prov_transport_mqtt_common.c: 0 warnings, 1 error
@@ -150,33 +150,33 @@ compiling RiotHmac.c...
 compiling RiotKdf.c...
 "no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/deps/RIoT/Emulator/RIoT/RIoTCrypt/RiotKdf.c": No such file or directory
 ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/deps/RIoT/Emulator/RIoT/RIoTCrypt/RiotKdf.c: 0 warnings, 1 error
-compiling at_modem_common.c...
-"no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/ST/STM32_Cellular/Core/Cellular_Service/AT_Service/Core/Src/at_modem_common.c": No such file or directory
-../../../../../../Middlewares/ST/STM32_Cellular/Core/Cellular_Service/AT_Service/Core/Src/at_modem_common.c: 0 warnings, 1 error
-compiling RiotX509Bldr.c...
-"no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/deps/RIoT/Emulator/RIoT/RIoTCrypt/RiotX509Bldr.c": No such file or directory
-../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/deps/RIoT/Emulator/RIoT/RIoTCrypt/RiotX509Bldr.c: 0 warnings, 1 error
 compiling RiotSha256.c...
 "no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/deps/RIoT/Emulator/RIoT/RIoTCrypt/RiotSha256.c": No such file or directory
 ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/deps/RIoT/Emulator/RIoT/RIoTCrypt/RiotSha256.c: 0 warnings, 1 error
+compiling RiotX509Bldr.c...
+"no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/deps/RIoT/Emulator/RIoT/RIoTCrypt/RiotX509Bldr.c": No such file or directory
+../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/provisioning_client/deps/RIoT/Emulator/RIoT/RIoTCrypt/RiotX509Bldr.c: 0 warnings, 1 error
+compiling at_modem_common.c...
+"no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/ST/STM32_Cellular/Core/Cellular_Service/AT_Service/Core/Src/at_modem_common.c": No such file or directory
+../../../../../../Middlewares/ST/STM32_Cellular/Core/Cellular_Service/AT_Service/Core/Src/at_modem_common.c: 0 warnings, 1 error
 compiling at_modem_signalling.c...
 "no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/ST/STM32_Cellular/Core/Cellular_Service/AT_Service/Core/Src/at_modem_signalling.c": No such file or directory
 ../../../../../../Middlewares/ST/STM32_Cellular/Core/Cellular_Service/AT_Service/Core/Src/at_modem_signalling.c: 0 warnings, 1 error
-compiling at_modem_socket.c...
-"no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/ST/STM32_Cellular/Core/Cellular_Service/AT_Service/Core/Src/at_modem_socket.c": No such file or directory
-../../../../../../Middlewares/ST/STM32_Cellular/Core/Cellular_Service/AT_Service/Core/Src/at_modem_socket.c: 0 warnings, 1 error
 compiling cellular_service.c...
 "no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/ST/STM32_Cellular/Core/Cellular_Service/Radio_Service/Cellular/Src/cellular_service.c": No such file or directory
 ../../../../../../Middlewares/ST/STM32_Cellular/Core/Cellular_Service/Radio_Service/Cellular/Src/cellular_service.c: 0 warnings, 1 error
+compiling at_modem_socket.c...
+"no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/ST/STM32_Cellular/Core/Cellular_Service/AT_Service/Core/Src/at_modem_socket.c": No such file or directory
+../../../../../../Middlewares/ST/STM32_Cellular/Core/Cellular_Service/AT_Service/Core/Src/at_modem_socket.c: 0 warnings, 1 error
 compiling cellular_service_os.c...
 "no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/ST/STM32_Cellular/Core/Cellular_Service/Radio_Service/Cellular/Src/cellular_service_os.c": No such file or directory
 ../../../../../../Middlewares/ST/STM32_Cellular/Core/Cellular_Service/Radio_Service/Cellular/Src/cellular_service_os.c: 0 warnings, 1 error
-compiling cellular_service_task.c...
-"no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/ST/STM32_Cellular/Core/Cellular_Service/Radio_Service/Cellular/Src/cellular_service_task.c": No such file or directory
-../../../../../../Middlewares/ST/STM32_Cellular/Core/Cellular_Service/Radio_Service/Cellular/Src/cellular_service_task.c: 0 warnings, 1 error
 compiling cellular_service_cmd.c...
 "no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/ST/STM32_Cellular/Core/Cellular_Service/Radio_Service/Cellular/Src/cellular_service_cmd.c": No such file or directory
 ../../../../../../Middlewares/ST/STM32_Cellular/Core/Cellular_Service/Radio_Service/Cellular/Src/cellular_service_cmd.c: 0 warnings, 1 error
+compiling cellular_service_task.c...
+"no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/ST/STM32_Cellular/Core/Cellular_Service/Radio_Service/Cellular/Src/cellular_service_task.c": No such file or directory
+../../../../../../Middlewares/ST/STM32_Cellular/Core/Cellular_Service/Radio_Service/Cellular/Src/cellular_service_task.c: 0 warnings, 1 error
 compiling cellular_runtime_custom.c...
 "no source": Error:  #5: cannot open source input file "../../../../../../Middlewares/ST/STM32_Cellular/Utilities/Misc/Cellular_Runtime/Src/cellular_runtime_custom.c": No such file or directory
 ../../../../../../Middlewares/ST/STM32_Cellular/Utilities/Misc/Cellular_Runtime/Src/cellular_runtime_custom.c: 0 warnings, 1 error
@@ -202,7 +202,7 @@ Package Vendor: ARM
 
    * Component: ARM::CMSIS:CORE:4.3.0
 Target not created.
-Build Time Elapsed:  00:00:10
+Build Time Elapsed:  00:00:11
 </pre>
 </body>
 </html>

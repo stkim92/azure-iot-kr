@@ -286,31 +286,31 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
  ① IoT Hub에서 **설정** > **공유 액세스 정책**을 선택합니다.
 
- ![][Create_SAS_Token_1]
+ ![][Link-Create_SAS_Token_1]
 
  ② **iothubowner**를 선택합니다.
 
- ![][Create_SAS_Token_2]
+ ![][Link-Create_SAS_Token_2]
 
  ③ 공유 엑세스 키에서 **연결 문자열 - 기본 키**를 복사합니다.
 
- ![][Create_SAS_Token_3]
+ ![][Link-Create_SAS_Token_3]
 
  ④ [**Device Explorer**][Link-Device_Explorer]를 실행합니다.
 
  ⑤ **Configure** > **Connection Information** > **IoT Hub Connection String**에 복사한 **연결 문자열 - 기본 키**를 입력하고 Update를 눌러 정보를 갱신합니다.
 
- ![][Create_SAS_Token_4]
+ ![][Link-Create_SAS_Token_4]
 
- ![][Create_SAS_Token_5]
+ ![][Link-Create_SAS_Token_5]
 
  ⑥ **Management** > **SAS Token . . .**을 눌러 엽니다.
 
- ![][Create_SAS_Token_6]
+ ![][Link-Create_SAS_Token_6]
 
  ⑦ **TTL(Days)**에 값을 입력한 후, **Generate**를 눌러 생성합니다.
 
- ![][Create_SAS_Token_7]
+ ![][Link-Create_SAS_Token_7]
 
 5. Topic 설정
 
@@ -424,14 +424,14 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 [Link-Define_The_Transformation_Query_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_define_the_transformation_query_2.png
 [Link-Define_The_Transformation_Query_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_define_the_transformation_query_3.png
 [Link-Define_The_Transformation_Query_4]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_define_the_transformation_query_4.png
-[Create_SAS_Token_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_1.png
-[Create_SAS_Token_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_2.png
-[Create_SAS_Token_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_3.png
+[Link-Create_SAS_Token_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_1.png
+[Link-Create_SAS_Token_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_2.png
+[Link-Create_SAS_Token_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_3.png
 [Link-Device_Explorer]:https://github.com/Wiznet/azure-iot-kr/blob/master/tools/Device%20Explorer/SetupDeviceExplorer.msi
-[Create_SAS_Token_4]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_4.png
-[Create_SAS_Token_5]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_5.png
-[Create_SAS_Token_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_6.png
-[Create_SAS_Token_7]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_7.png
+[Link-Create_SAS_Token_4]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_4.png
+[Link-Create_SAS_Token_5]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_5.png
+[Link-Create_SAS_Token_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_6.png
+[Link-Create_SAS_Token_7]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_7.png
 [Link-Standalone_Mqtt_Atcmd_Wizfi360_Set_Up_And_Run_Wizfi360_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_set_up_and_run_wizfi360_1.png
 [Link-WizFi360-Quick_Start_Guide]: http://wizwiki.net/wiki/lib/exe/fetch.php/products:wizfi360:wizfi360ds:wizfi360qs_v113k.pdf
 [Link-WizFi360-AT_Instruction_Set]: http://wizwiki.net/wiki/lib/exe/fetch.php/products:wizfi360:wizfi360ds:wizfi360_atset_v106k.pdf

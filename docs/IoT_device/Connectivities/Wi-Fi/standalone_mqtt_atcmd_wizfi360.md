@@ -306,7 +306,7 @@ WizFi360의 조금 더 상세한 **사용 방법**은 [**Quick Start Guide**][Li
 
  ![][Link-Create_SAS_Token_5]
 
- ⑥ **Management** > **SAS Token . . .**을 눌러 엽니다.
+ ⑥ **Management** > **SAS Token**을 눌러 엽니다.
 
  ![][Link-Create_SAS_Token_6]
 

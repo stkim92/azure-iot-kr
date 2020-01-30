@@ -126,7 +126,7 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
  ![][Link-Create_IoT_Device_2]
 
-2. **디바이스 ID**를 입력하고 **저장**을 하여 **IoT Device를** 생성합니다.
+2. **디바이스 ID**를 입력하고 **저장**을 하여 IoT Device를 생성합니다.
 
  ![][Link-Create_IoT_Device_4]
 
@@ -259,24 +259,28 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 ### 9. WizFi360 설정 및 실행
 
 1. Mode 설정
-| Command | Response |
-|:--------|:--------|
-| AT+CWMODE_CUR=1 | OK |
+
+ |  Command | Response |
+ |:--------|:--------|
+ | AT+CWMODE_CUR=1 | OK |
 
 2. DHCP 설정
-| Command | Response |
-|:--------|:--------|
-| AT+CWDHCP_CUR=1,1 | OK |
+
+ | Command | Response |
+ |:--------|:--------|
+ | AT+CWDHCP_CUR=1,1 | OK |
 
 3. AP 접속
-| Command | Response |
-|:--------|:--------|
-| AT+CWJAP_CUR="**ssid**","**password**" <br><br> Example : <br> AT+CWJAP_CUR="**wiznet**","**0123456789**" | WIFI CONNECTED <br> WIFI GOT IP <br><br> OK |
+
+ | Command | Response |
+ |:--------|:--------|
+ | AT+CWJAP_CUR="**ssid**","**password**" <br><br> Example : <br> AT+CWJAP_CUR="**wiznet**","**0123456789**" | WIFI CONNECTED <br> WIFI GOT IP <br><br> OK |
 
 4. MQTT 연결 설정
-| Command | Response |
-|:--------|:--------|
-| AT+MQTTSET="**iot_hub_host_name**/**device_id**/?api-version=2018-06-30","**sas_token**","**device_id**",60<br><br> Example : <br> AT+MQTTSET="**MyWizFi360IoTHub.azure-devices.net**/**MyWizFi360IoTDevice**/?api-version=2018-06-30","**SharedAccessSignature sr=MyWizFi360IoTHub.azure-devices.net%2Fdevices%2FMyWizFi360IoTDevice&sig=t3R9nDS7ezMGBdb%2FNd5ktb3xQx5jx4NC02n325vRA6c%3D&se=1611895717**","**MyWizFi360IoTDevice**",60 | OK |
+
+ | Command | Response |
+ |:--------|:--------|
+ | AT+MQTTSET="**iot_hub_host_name**/**device_id**/?api-version=2018-06-30","**sas_token**","**device_id**",60<br><br> Example : <br> AT+MQTTSET="**MyWizFi360IoTHub.azure-devices.net**/**MyWizFi360IoTDevice**/?api-version=2018-06-30","**SharedAccessSignature sr=MyWizFi360IoTHub.azure-devices.net%2Fdevices%2FMyWizFi360IoTDevice&sig=t3R9nDS7ezMGBdb%2FNd5ktb3xQx5jx4NC02n325vRA6c%3D&se=1611895717**","**MyWizFi360IoTDevice**",60 | OK |
 
  ※ **SAS Token 생성**은 아래를 참고 바랍니다.
 
@@ -300,7 +304,7 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
  ![][Create_SAS_Token_5]
 
- ⑥ **Management** > **SAS Token . . .**을 눌러 엽니다.
+ ⑥ **Management** > **SAS Token. . .**을 눌러 엽니다.
 
  ![][Create_SAS_Token_6]
 
@@ -309,32 +313,37 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
  ![][Create_SAS_Token_7]
 
 5. Topic 설정
-| Command | Response |
-|:--------|:--------|
-| AT+MQTTTOPIC="devices/**device_id**/messages/events/",devices/**device_id**/messages/devicebound/# <br><br> Example : <br> AT+MQTTTOPIC="devices/**MyWizFi360IoTDevice**/messages/events/","devices/**MyWizFi360IoTDevice**/messages/devicebound/#" | OK |
+
+ | Command | Response |
+ |:--------|:--------|
+ | AT+MQTTTOPIC="devices/**device_id**/messages/events/",devices/**device_id**/messages/devicebound/# <br><br> Example : <br> AT+MQTTTOPIC="devices/**MyWizFi360IoTDevice**/messages/events/","devices/**MyWizFi360IoTDevice**/messages/devicebound/#" | OK |
 
 6. Broker 연결
-| Command | Response |
-|:--------|:--------|
-| AT+MQTTCON=1,"**iot_hub_host_name**",8883 <br><br> Example : <br> AT+MQTTCON=1,"**MyWizFi360IoTHub.azure-devices.net**",8883 | CONNECT <br><br> OK |
+
+ | Command | Response |
+ |:--------|:--------|
+ | AT+MQTTCON=1,"**iot_hub_host_name**",8883 <br><br> Example : <br> AT+MQTTCON=1,"**MyWizFi360IoTHub.azure-devices.net**",8883 | CONNECT <br><br> OK |
 
 7. Publish Message
-| Command | Response |
-|:--------|:--------|
-| AT+MQTTPUB="publish_data" <br><br> Example : <br> AT+MQTTPUB="{"deviceId":"MyWizFi360IoTDevice","temperature":21.97,"humidity":43.58}"| OK |
-```
-Note :
-Data를 Publish 할 때, [Stream Analytics 실행](#Run_Stream_Analytics) 중이어야 Blob Storage로 Data가 전달됩니다.
-```
-```
-Note :
-Publish Data는 어떤 형태라도 가능하지만, Azure Guide의 Stream Analytics에서 작업 입력 구성 설정 중,
-Event Serialization 형식이 기본 JSON 형태이므로 맞춰주어야 합니다.
-```
+
+ | Command | Response |
+ |:--------|:--------|
+ | AT+MQTTPUB="publish_data" <br><br> Example : <br> AT+MQTTPUB="{"deviceId":"MyWizFi360IoTDevice","temperature":21.97,"humidity":43.58}"| OK |
+
+ ```
+ Note :
+ Data를 Publish 할 때, Stream Analytics 실행 중이어야 Blob Storage로 Data가 전달됩니다.
+ ```
+
+ ```
+ Note :
+ Publish Data는 어떤 형태라도 가능하지만, Azure Guide의 Stream Analytics에서 작업 입력 구성 설정 중,
+ Event Serialization 형식이 기본 JSON 형태이므로 맞춰주어야 합니다.
+ ```
 
  ![][Link-Standalone_Mqtt_Atcmd_Wizfi360_Set_Up_And_Run_Wizfi360_1]
 
-※ WizFi360의 **사용 방법**은 [**Quick Start Guide**][Link-WizFi360-Quick_Start_Guide], **AT Command**는 **[AT Instruction Set][Link-WizFi360-AT_Instruction_Set]**을 참고 바랍니다.
+※ WizFi360의 **사용 방법**은 [**Quick Start Guide**][Link-WizFi360-Quick_Start_Guide], **AT Command**는 [**AT Instruction Set**][Link-WizFi360-AT_Instruction_Set]을 참고 바랍니다.
 
 
 

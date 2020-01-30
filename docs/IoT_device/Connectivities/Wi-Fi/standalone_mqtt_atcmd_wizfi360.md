@@ -67,6 +67,7 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
 <a name="Required_Item"></a>
 ## 필요한 항목
+
 ![][Link-Required_Item]
 
 - [WizFi360-EVB-Shield][Link-WizFi360-EVB-Shield]
@@ -95,19 +96,25 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 ### 2. IoT Hub 생성
 
 1. Azure Portal에서 **리소스 만들기** > **사물 인터넷** > **IoT Hub**를 선택합니다.
+
 ![][Link-Create_IoT_Hub_1]
+
 ![][Link-Create_IoT_Hub_2]
 
 2. **기본 사항**을 입력합니다. **리소스 그룹**을 **새로 만들기**를 선택하여 생성합니다.
+
 ![][Link-Create_IoT_Hub_5]
 
 3. **크키 및 배율**을 설정합니다. **가격 및 크기 계층**을 **F1:무료 계층**으로 선택합니다.
+
 ![][Link-Create_IoT_Hub_6]
 
 4. **검토 + 만들기**를 선택합니다.
+
 ![][Link-Create_IoT_Hub_7]
 
-5. 모든 항목을 입력 및 설정을 하였다면, **만들기**를 눌러 **IoT Hub를 생성**합니다. IoT Hub를 생성 시, 몇 분정도의 시간이 소요가 될 수 있습니다.
+5. 모든 항목을 입력 및 설정을 하였다면, **만들기**를 눌러 **IoT Hub를 생성**합니다. IoT Hub를 생성 시, 몇 분 정도의 시간이 소요가 될 수 있습니다.
+
 ![][Link-Create_IoT_Hub_8]
 
 
@@ -116,17 +123,23 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 ### 3. IoT Device 생성
 
 1. IoT Hub에서 **탐색기** > **IoT 디바이스** > **새로 만들기**를 선택합니다.
+
 ![][Link-Create_IoT_Device_2]
 
 2. **디바이스 ID**를 입력하고 **저장**을 하여 **IoT Device를** 생성합니다.
+
 ![][Link-Create_IoT_Device_4]
 
 3. IoT Device 생성 후, 목록에서 **Device를 선택하여 엽니다.**
+
 ![][Link-Create_IoT_Device_5]
+
 ![][Link-Create_IoT_Device_6]
 
 4. **기본 연결 문자열**을 복사하여 메모장과 같은 별도의 파일에 **저장**을 합니다.
+
 ![][Link-Create_IoT_Device_7]
+
 ![][Link-Create_IoT_Device_8]
 
 
@@ -135,23 +148,31 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 ### 4. Blob Storage 생성
 
 1. Azure Portal에서 **리소스 만들기** > **저장소** > **Storage 계정**을 선택합니다.
+
 ![][Link-Create_Blob_Storage_1]
+
 ![][Link-Create_Blob_Storage_2]
 
 2. **기본 사항**을 입력 및 설정합니다. 자신이 만든 **IoT Hub와 동일한 리소스 그룹 및 위치**를 선택합니다.
+
 ![][Link-Create_Blob_Storage_4]
 
 3. **검토 + 만들기**를 선택합니다.
+
 ![][Link-Create_Blob_Storage_5]
 
 4. 모든 항목을 입력 및 설정을 하였다면, **만들기**를 눌러 **Blob Storage를 생성**합니다.
+
 ![][Link-Create_Blob_Storage_6]
 
 5. Blob Storage 생성 후, **개요** > **컨테이너** > **+ 컨테이너**를 선택합니다.
+
 ![][Link-Create_Blob_Storage_10]
+
 ![][Link-Create_Blob_Storage_11]
 
 6. Container의 **이름**을 입력 후, **확인**을 눌러 **Container를 생성**합니다.
+
 ![][Link-Create_Blob_Storage_12]
 
 
@@ -160,13 +181,17 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 ### 5. Stream Analytics 생성
 
 1. Azure Portal에서 **리소스 만들기** > **분석** > **Stream Analytics job**을 선택합니다.
+
 ![][Link-Create_Stream_Analytics_1]
+
 ![][Link-Create_Stream_Analytics_3]
 
 2. **작업 이름**을 입력하고 나머지 항목을 다음 그림과 같이 입력 및 설정합니다.
+
 ![][Link-Create_Stream_Analytics_5]
 
-3. **만들기**를 하여 생성합니다.
+3. **만들기**를 눌러 생성합니다.
+
 ![][Link-Create_Stream_Analytics_6]
 
 
@@ -176,11 +201,19 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
 1. Stream Analytics에서 작업 **작업 토폴로지** > **입력** > **+ 스트림 입력 추가**를 선택합니다.
 
+![][Link-Configure_Job_Input_2]
+
 2. **IoT Hub**를 선택합니다.
+
+![][Link-Configure_Job_Input_3]
 
 3. **입력 별칭**을 입력하고 나머지 항목을 다음 그림과 같이 입력 및 설정합니다.
 
+![][Link-Configure_Job_Input_5]
+
 4. **저장**을 눌러 작업 입력을 구성합니다.
+
+![][Link-Configure_Job_Input_6]
 
 
 
@@ -189,11 +222,19 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
 1. Stream Analytics에서 작업 **작업 토폴로지** > **출력** > **+ 추가**를 선택합니다.
 
+![][Link-Configure_Job_Output_2]
+
 2. **Blob Storage/Data Lake Storage Gen2**를 선택합니다.
+
+![][Link-Configure_Job_Output_3]
 
 3. **출력 별칭**을 입력하고 나머지 항목을 다음 그림과 같이 입력 및 설정합니다.
 
+![][Link-Configure_Job_Output_5]
+
 4. **저장**을 눌러 작업 출력을 구성합니다.
+
+![][Link-Configure_Job_Output_6]
 
 
 
@@ -202,9 +243,15 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
 1. Stream Analytics에서 작업 **작업 토폴로지** > **쿼리**를 선택합니다.
 
+![][Link-Define_The_Transformation_Query_2]
+
 2. **Query**를 다음 그림과 같이 **수정 및 작성**합니다.
 
+![][Link-Define_The_Transformation_Query_3]
+
 3. **쿼리 저장**을 눌러 저장합니다.
+
+![][Link-Define_The_Transformation_Query_4]
 
 
 
@@ -252,3 +299,15 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 [Link-Create_Stream_Analytics_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_stream_analytics_3.png
 [Link-Create_Stream_Analytics_5]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_stream_analytics_5.png
 [Link-Create_Stream_Analytics_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_stream_analytics_6.png
+[Link-Configure_Job_Input_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_configure_job_input_2.png
+[Link-Configure_Job_Input_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_configure_job_input_3.png
+[Link-Configure_Job_Input_5]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_configure_job_input_5.png
+[Link-Configure_Job_Input_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_configure_job_input_6.png
+[Link-Configure_Job_Output_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_configure_job_Output_2.png
+[Link-Configure_Job_Output_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_configure_job_Output_3.png
+[Link-Configure_Job_Output_5]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_configure_job_Output_5.png
+[Link-Configure_Job_Output_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_configure_job_Output_6.png
+[Link-Define_The_Transformation_Query_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_define_the_transformation_query_2.png
+[Link-Define_The_Transformation_Query_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_define_the_transformation_query_3.png
+[Link-Define_The_Transformation_Query_4]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_define_the_transformation_query_4.png
+

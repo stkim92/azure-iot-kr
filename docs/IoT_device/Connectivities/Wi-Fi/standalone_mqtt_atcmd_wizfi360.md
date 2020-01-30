@@ -258,6 +258,8 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 <a name="Step-8-Set_Up_And_Run_WizFi360"></a>
 ### 9. WizFi360 설정 및 실행
 
+WizFi360의 조금 더 상세한 **사용 방법**은 [**Quick Start Guide**][Link-WizFi360-Quick_Start_Guide], **AT Command**는 [**AT Instruction Set**][Link-WizFi360-AT_Instruction_Set]을 참고 바랍니다.
+
 1. Mode 설정
 
  |  Command | Response |
@@ -326,14 +328,11 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
 7. Publish Message
 
+ ※ Data를 Publish 할 때, [Stream Analytics 실행](#Run_Stream_Analytics) 중이어야 Blob Storage로 Data가 전달됩니다.
+
  | Command | Response |
  |:--------|:--------|
  | AT+MQTTPUB="publish_data" <br><br> Example : <br> AT+MQTTPUB="{"deviceId":"MyWizFi360IoTDevice","temperature":21.97,"humidity":43.58}"| OK |
-
- ```
- Note :
- Data를 Publish 할 때, Stream Analytics 실행 중이어야 Blob Storage로 Data가 전달됩니다.
- ```
 
  ```
  Note :
@@ -342,8 +341,6 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
  ```
 
  ![][Link-Standalone_Mqtt_Atcmd_Wizfi360_Set_Up_And_Run_Wizfi360_1]
-
-※ WizFi360의 **사용 방법**은 [**Quick Start Guide**][Link-WizFi360-Quick_Start_Guide], **AT Command**는 [**AT Instruction Set**][Link-WizFi360-AT_Instruction_Set]을 참고 바랍니다.
 
 
 
@@ -381,6 +378,7 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
 <a name="Next"></a>
 ## 다음 단계
+준비 중 . . .
 
 
 
@@ -424,6 +422,8 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 [Link-Define_The_Transformation_Query_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_define_the_transformation_query_2.png
 [Link-Define_The_Transformation_Query_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_define_the_transformation_query_3.png
 [Link-Define_The_Transformation_Query_4]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_define_the_transformation_query_4.png
+[Link-WizFi360-Quick_Start_Guide]: http://wizwiki.net/wiki/lib/exe/fetch.php/products:wizfi360:wizfi360ds:wizfi360qs_v113k.pdf
+[Link-WizFi360-AT_Instruction_Set]: http://wizwiki.net/wiki/lib/exe/fetch.php/products:wizfi360:wizfi360ds:wizfi360_atset_v106k.pdf
 [Link-Create_SAS_Token_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_1.png
 [Link-Create_SAS_Token_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_2.png
 [Link-Create_SAS_Token_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_3.png
@@ -433,8 +433,6 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 [Link-Create_SAS_Token_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_6.png
 [Link-Create_SAS_Token_7]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_7.png
 [Link-Standalone_Mqtt_Atcmd_Wizfi360_Set_Up_And_Run_Wizfi360_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_set_up_and_run_wizfi360_1.png
-[Link-WizFi360-Quick_Start_Guide]: http://wizwiki.net/wiki/lib/exe/fetch.php/products:wizfi360:wizfi360ds:wizfi360qs_v113k.pdf
-[Link-WizFi360-AT_Instruction_Set]: http://wizwiki.net/wiki/lib/exe/fetch.php/products:wizfi360:wizfi360ds:wizfi360_atset_v106k.pdf
 [Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_start_the_stream_analytics_job_and_check_the_output_1.png
 [Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_start_the_stream_analytics_job_and_check_the_output_2.png
 [Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_start_the_stream_analytics_job_and_check_the_output_3.png

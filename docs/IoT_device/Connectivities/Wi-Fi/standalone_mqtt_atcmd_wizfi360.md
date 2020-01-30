@@ -296,7 +296,7 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
  ![][Create_SAS_Token_3]
 
- ④ [**Device Explore**][Link-Device_Explore]를 실행합니다.
+ ④ [**Device Explorer**][Link-Device_Explorer]를 실행합니다.
 
  ⑤ **Configure** > **Connection Information** > **IoT Hub Connection String**에 복사한 **연결 문자열 - 기본 키**를 입력하고 Update를 눌러 정보를 갱신합니다.
 
@@ -304,7 +304,7 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
  ![][Create_SAS_Token_5]
 
- ⑥ **Management** > **SAS Token. . .**을 눌러 엽니다.
+ ⑥ **Management** > **SAS Token . . .**을 눌러 엽니다.
 
  ![][Create_SAS_Token_6]
 
@@ -427,7 +427,7 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 [Create_SAS_Token_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_1.png
 [Create_SAS_Token_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_2.png
 [Create_SAS_Token_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_3.png
-[Link-Device_Explore]:https://github.com/Wiznet/azure-iot-kr/blob/master/tools/Device%20Explorer/SetupDeviceExplorer.msi
+[Link-Device_Explorer]:https://github.com/Wiznet/azure-iot-kr/blob/master/tools/Device%20Explorer/SetupDeviceExplorer.msi
 [Create_SAS_Token_4]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_4.png
 [Create_SAS_Token_5]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_5.png
 [Create_SAS_Token_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_6.png

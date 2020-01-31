@@ -443,7 +443,7 @@ float temp1;
 <a name="ReadMore"></a>
 ## 더 보기
 * [ST AZURE Dashboard 가이드][st-azure-dashboard]
-* [Raspberry Pi를 이용한 X-CUBE-AZURE SDK 개발 환경 구축][raspberrypi_azure_c_sdk]
+* [Raspberry Pi를 이용한 X-CUBE-AZURE SDK 개발 환경 구축][raspberrypi-azure-c-sdk]
 
 
 
@@ -451,7 +451,7 @@ float temp1;
 [st-usb-driver]: https://www.st.com/en/development-tools/stsw-link009.html
 
 [st-azure-dashboard]: ../../../../Azure_Cloud/st_azure_dashboard.md
-[raspberrypi_azure_c_sdk]: ../../../../Azure_Cloud/raspberrypi_azure_c_sdk.md
+[raspberrypi-azure-c-sdk]: ../../../../Azure_Cloud/raspberrypi_azure_c_sdk.md
 
 [hw-stack-nucleo]: ../../../../../images/wiot-shield-qc01-nucleo-144.png
 

@@ -328,7 +328,8 @@ Syntax:
 <a name="Step-5-Read_Data_From_IoT_Hub"></a>
 ### 5. Device Explorer에서 수신한 Data 읽기
 
-1. Device Explorer 에서 Monitor 버튼을 클릭합니다.
+1. Device Explorer 에서 "Monitor" 버튼을 클릭합니다.
+> MQTTPUB 명령을 통해 메시지를 보내기 전에 "Monitor" 버튼을 눌러야 합니다.
 2. 터미널에서 MQTTPUB command으로 수신한 데이터를 확인 할 수 있습니다.
 
 ![](/images/DeviceExplorerscreenshot.PNG)

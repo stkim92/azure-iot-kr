@@ -60,7 +60,7 @@ Device Type은 `Auto-provisioned`로 선택하여 `SUBMIT`버튼을 클릭합니
 
 <a name="ReadMore"></a>
 ## 더 보기
-* [WIZnet IoT Shield(WIoT-QC01)와 STM32L496 Nucleo-144를 이용한 X-CUBE-AZURE SDK 개발 환경 구축1][nucleo-stm32l496_azure-st-sdk]
+* [WIZnet IoT Shield(WIoT-QC01)와 STM32L496 Nucleo-144를 이용한 X-CUBE-AZURE SDK 개발 환경 구축][nucleo-stm32l496_azure-st-sdk]
 * [Raspberry Pi를 이용한 X-CUBE-AZURE SDK 개발 환경 구축][raspberrypi-azure-c-sdk]
 
 

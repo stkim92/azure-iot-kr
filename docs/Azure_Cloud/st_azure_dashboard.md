@@ -1,4 +1,4 @@
-# WIZnet Azure IoT Documents and Samples
+# ST AZURE Dashboard 가이드
 
 ## 목차
 
@@ -17,12 +17,14 @@
 <a name="Introduction"></a>
 ## 소개
 
-이 문서는 [Keil Compiler](https://www.keil.com/)를 기반으로 WIZnet IoT Shield(WIoT-QC01)와 STM32L496 Nucleo-144를 이용하여 X-CUBE-AZURE SDK 개발 환경을 구축하는 방법에 대하여 설명합니다.
+이 문서는 X-CUBE-AZURE SDK 기반 디바이스와 ST AZURE Dashboard를 연동하기위한 절차를 설명하며, 아래 그림에서 ST AZURE Dashboard를 설명합니다.
 
-각 과정에는 다음 내용들이 포함되어 있습니다:
-- WIZnet IoT Shield(WIoT-QC01)와 STM32L496 Nucleo-144 하드웨어 설정
-- STM32L496 Nucleo-144와 앰투앰넷 Cat.M1 모듈을 이용하여 X-CUBE-AZURE SDK를 사용하기 위한 수정 사항
-- 디바이스와 Azure Cloud 상에서 정상 통신 확인 과정
+![][st-azure-sdk-outline]
+
+각 과정에는 다음 내용들이 포함되어 있습니다.
+- ST AZURE Dashboard 접속 및 회원가입
+- X-CUBE-AZURE SDK 기반 디바이스 등록
+- 디바이스가 보낸 데이터 확인
 
 <a name="FunctionExamplanation"></a>
 ## ST AZURE Dashboard 기능 설명
@@ -54,7 +56,18 @@ Device Type은 `Auto-provisioned`로 선택하여 `SUBMIT`버튼을 클릭합니
 본 예제는 온도데이터를 실시간으로 선택한 화면 입니다.
 ![][6]
 
+이와 같이 ST AZURE Dashboard에 X-CUBE-AZURE SDK 기반 디바이스를 등록하고 디바이스가 보낸 데이터를 확인하는 방법을 알아보았습니다.
+
+<a name="ReadMore"></a>
+## 더 보기
+* [ST AZURE Dashboard 가이드][st-azure-dashboard]
+* [Raspberry Pi를 이용한 X-CUBE-AZURE SDK 개발 환경 구축][raspberrypi-azure-c-sdk]
+
+
 [nucleo-stm32l496_azure-st-sdk]: ../IoT_device/Connectivities/LTE/Cat.M1/nucleo_stm32l496_azure_st_sdk_bg96.md
+[raspberrypi-azure-c-sdk]: ../IoT_device/Connectivities/LTE/Cat.M1/raspberrypi_azure_c_sdk.md
+
+[st-azure-sdk-outline]: ../../images/st-azure-sdk-outline.PNG
 
 [1]: ../../images/st-azure-dashboard-1.PNG
 [2]: ../../images/st-azure-dashboard-2.PNG

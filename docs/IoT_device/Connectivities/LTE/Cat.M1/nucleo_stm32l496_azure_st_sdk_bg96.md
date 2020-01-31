@@ -14,12 +14,14 @@
 ## 소개
 
 
-이 문서는 [Keil Compiler](https://www.keil.com/)를 기반으로 WIZnet IoT Shield(WIoT-QC01)와 STM32L496 Nucleo-144를 이용하여 X-CUBE-AZURE SDK 개발 환경을 구축하는 방법에 대하여 설명합니다.
+이 문서는 [Keil Compiler](https://www.keil.com/)를 기반으로 WIZnet IoT Shield(WIoT-QC01)와 STM32L496 Nucleo-144를 이용하여 X-CUBE-AZURE SDK 개발 환경을 구축하는 방법에 대하여 설명하며, 다음 그림에서 Iot Device 부분을 설명합니다.
 
-각 과정에는 다음 내용들이 포함되어 있습니다:
+![][st-azure-sdk-outline]
+
+각 과정에는 다음 내용들이 포함되어 있습니다.
 - WIZnet IoT Shield(WIoT-QC01)와 STM32L496 Nucleo-144 하드웨어 설정
 - STM32L496 Nucleo-144와 앰투앰넷 Cat.M1 모듈을 이용하여 X-CUBE-AZURE SDK를 사용하기 위한 수정 사항
-- 디바이스와 Azure Cloud 상에서 정상 통신 확인 과정
+- ST X-CUBE AZURE SDK를 기반으로 Cat.M1을 통해 ST AZURE Dashboard로 온도 데이터 전송
 
 
 <a name="Step-1-Prerequisites"></a>
@@ -451,13 +453,15 @@ float temp1;
 [st-usb-driver]: https://www.st.com/en/development-tools/stsw-link009.html
 
 [st-azure-dashboard]: ../../../../Azure_Cloud/st_azure_dashboard.md
-[raspberrypi-azure-c-sdk]: ../../../../Azure_Cloud/raspberrypi_azure_c_sdk.md
+[raspberrypi-azure-c-sdk]: ./Azure_Cloud/raspberrypi_azure_c_sdk.md
 
 [hw-stack-nucleo]: ../../../../../images/wiot-shield-qc01-nucleo-144.png
 
 [hw-settings-nucleo-qc01]: ../../../../../images/WIoT-QC01_JUMP_Arduino_serialD2_D8.png
 [hw-settings-nucleo-wm01]: ../../../../../images/WIoT-WM01_JUMP_Arduino_serialD2_D8.png
 [hw-settings-nucleo-am01]: ../../../../../images/WIoT-AM01_JUMP_Arduino_serialD2_D8.png
+
+[st-azure-sdk-outline]: ../../../../../images/st-azure-sdk-outline.PNG
 
 [build]: ../../../../../images/keil-build.png
 [1]: ../../../../../images/nucleo-stm32l496-azure-st-sdk-1.png

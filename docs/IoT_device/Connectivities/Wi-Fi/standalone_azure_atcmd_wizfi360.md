@@ -7,6 +7,8 @@
 
 - [소개](#Learning_Content)
 
+- [디바이스 준비](#Device_Prep)
+
 - [AT 명령어](#Required_Item)
 
 - [동작 예제](#Example)
@@ -31,8 +33,11 @@
 ##### Hardware Requirement
 -   Desktop or laptop computer
 -   MicroUSB 케이블
-- 	MS Azure Account (Azure 구독이 아직 없는 경우 체험 무료[계정]을 만듭니다.)
 -   WizFi360-EVB-Shield
+
+##### Software Requirement
+
+- 	MS Azure Account (Azure 구독이 아직 없는 경우 체험 무료[계정]을 만듭니다.)
 -   Preferred Serial Terminal (TeraTerm, YAT, etc.)
 -   [Device Explorer]
 
@@ -50,6 +55,24 @@ Microsoft Azure 의 서비스에 [WizFi360] 을 연동하여 데이터를 클라
 WiFi모듈 테스트를 위해 [WizFi360-EVB-Shield] Evaluation 보드를 사용되었습니다.
 
 ![](/images/standalone_mqtt_atcmd_wizfi360_required_item.png)
+
+<a name="Device_Prep"></a>
+## 디바이스 준비
+
+####하드웨어 설정
+
+본 문서에서 WizFi360-EVB-Shield가 standalone mode에서 사용됩니다. 따라서 UART를 위해 MicroUSB를 사용할겁니다.
+MicroUSB 사용하는경우 SW1을 ON 시키고 MicroUSB 연결해야됩니다.
+![](/images/WizFi360EVB_SW1.JPG)
+
+####디바이스 연결
+하드웨어 설정 후 MicroUSB 이용하여 PC와 연결합니다. PC운영체제에서 보드와 연결된 COM 포트를 확인할 수 있습니다.
+> 윈도우 운영체제의 경우, 장치 관리자(Device Manager)에서 COM 포트를 확인할 수 있습니다.
+![](/images/DeviceManager.JPG)
+
+> 장치 관리자에서 COM 포트를 확인할 수 없는 경우, 다음 링크에서 드라이버를 다운로드하여 설치하시기 바랍니다.
+  - [Silicon Labs CP210x USB to UART Driver]
+
 
 <a name="Required_Item"></a>
 ## AT 명령어
@@ -232,6 +255,13 @@ Syntax:
 <a name="Step-4-Setting_WizFi360"></a>
 ### 4. WizFi360 설정
 
+#### 시리얼 터미널 연결 및 실행
+
+시리얼 터미널 프로그램을 실행하여 디바이스 연결 단계에서 확인한 보드의 COM 포트와 Baudrate 115200을 선택하여 시리얼 포트를 연결합니다.
+> 디버그 메시지 출력용 시리얼 포트 설정 정보: 115200-8-N-1, None.
+
+
+
 ##### 1.  Set Wifi station mode
 
 | Command | Response |
@@ -313,3 +343,4 @@ Syntax:
 [WizFi360]: https://wizwiki.net/wiki/doku.php/products:wizfi360:start
 [WizFi360-EVB-Shield]: https://wizwiki.net/wiki/doku.php/products:wizfi360:board:wizfi360-evb:start
 [Device Explorer]: https://catalog.azureiotsolutions.com/docs?title=Azure/azure-iot-device-ecosystem/manage_iot_hub
+[Silicon Labs CP210x USB to UART Driver]: https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers

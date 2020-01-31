@@ -59,13 +59,13 @@ WiFi모듈 테스트를 위해 [WizFi360-EVB-Shield] Evaluation 보드를 사용
 <a name="Device_Prep"></a>
 ## 디바이스 준비
 
-####하드웨어 설정
+#### 하드웨어 설정
 
 본 문서에서 WizFi360-EVB-Shield가 standalone mode에서 사용됩니다. 따라서 UART를 위해 MicroUSB를 사용할겁니다.
 MicroUSB 사용하는경우 SW1을 ON 시키고 MicroUSB 연결해야됩니다.
 ![](/images/WizFi360EVB_SW1.JPG)
 
-####디바이스 연결
+#### 디바이스 연결
 하드웨어 설정 후 MicroUSB 이용하여 PC와 연결합니다. PC운영체제에서 보드와 연결된 COM 포트를 확인할 수 있습니다.
 > 윈도우 운영체제의 경우, 장치 관리자(Device Manager)에서 COM 포트를 확인할 수 있습니다.
 ![](/images/DeviceManager.JPG)

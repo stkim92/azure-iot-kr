@@ -42,11 +42,16 @@
 ![][2]
 
 #### 3) 디바이스 등록
-
+디바이스를 등록하기 위해 메뉴의 `Devices`를 클릭하고 `+`버튼을 클릭합니다.
 ![][3]
+
+`DeviceID`란에 **[WIZnet IoT Shield(WIoT-QC01)와 STM32L496 Nucleo-144를 이용한 X-CUBE-AZURE SDK 개발 환경 구축][nucleo_stm32l496_azure_st_sdk_]**~에서 확인한 12자리 문자로 구성된 값을 입력합니다. Device Type은 `Auto-provisioned`로 선택하여 `SUBMIT`버튼을 클릭합니다.
 ![][4]
 ![][5]
 #### 4) 데이터 확인
+데이터를 확인 하기 위해 메뉴의 `Telemetry`을 클릭하고, 데이터를 조회할 디바이스, 데이터, 조회 기간을 선택하신 후 오른쪽 화실표를 클릭하시면, 하단에 그래프가 출력되는 것을 확인 할 수 있습니다.
+
+본 예제는 온도데이터를 실시간으로 선택한 화면 입니다.
 ![][6]
 
 [1]: ../../images/st-azure-dashboard-1.png

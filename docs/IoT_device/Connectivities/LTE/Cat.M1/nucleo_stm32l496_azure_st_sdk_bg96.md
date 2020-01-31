@@ -13,7 +13,6 @@
 <a name="Introduction"></a>
 ## 소개
 
-**문서의 주요 내용**
 
 이 문서는 [Keil Compiler](https://www.keil.com/)를 기반으로 WIZnet IoT Shield(WIoT-QC01)와 STM32L496 Nucleo-144를 이용하여 X-CUBE-AZURE SDK 개발 환경을 구축하는 방법에 대하여 설명합니다.
 
@@ -50,7 +49,7 @@
 <a name="Step-2-PrepareDevice"></a>
 ## Step 2: 디바이스 준비
 
-### 하드웨어 설정
+#### 1) 하드웨어 설정
 
 WIZnet IoT Shield를 STM32L496 Nucleo-144 보드와 결합합니다.
 - 두 장치 모두 Arduino UNO Rev3 호환 핀 커넥터를 지원하므로 손쉽게 결합(Stacking) 할 수 있습니다.
@@ -62,18 +61,15 @@ WIZnet IoT Shield는 다양한 밴더의 Cat.M1 모듈을 활용 할 수 있도�
 - 각각 밴더의 모듈은 동작 전압, PWRKEY 동작 등에 차이가 있습니다.
 - 따라서 Jumper 설정을 통해 인터페이스 보드에 적합한 하드웨어 설정이 선행되어야 합니다.
 
-본 가이드에서는 WIoT-QC01을 사용하여 진행할 예정입니다.
-
-
 | :heavy_check_mark: WIoT-QC01 Jumper settings<bR> | WIoT-WM01 Jumper settings | WIoT-AM01 Jumper settings |
 |:--------------------------:|:--------------------------:|:--------------------------:|
 |![][hw-settings-nucleo-qc01]|![][hw-settings-nucleo-wm01]|![][hw-settings-nucleo-am01]|
 
 > 해당 설정은 각 모듈 별로 Nucleo 보드의 `D2`, `D8` 핀에서 지원하는 UART와 인터페이스 하기 위한 설정입니다. `D0`, `D1` 핀을 UART로 활용하거나 MCU 보드 없이 Standalone 모드로 활용하려는 경우 하드웨어 저장소의 **Settings**를 참고하시기 바랍니다.
-> - 본 가이드에서는 `D0`, `D1`핀을 UART로 활용합니다.
+> - 본 가이드에서는 WIoT-QC01을 사용하며, `D0`, `D1`핀을 UART로 활용할 예정입니다.
 
 
-### 디바이스 연결
+#### 2) 디바이스 연결
 
 하드웨어 설정 후 USB 커넥터를 이용하여 STM32L496 Nucleo-144 보드와 PC를 연결합니다. PC 운영체제에서 보드와 연결된 COM 포트를 확인할 수 있습니다.
 > 윈도우 운영체제의 경우, 장치 관리자(Device Manager)에서 COM 포트를 확인할 수 있습니다.
@@ -88,7 +84,7 @@ WIZnet IoT Shield는 다양한 밴더의 Cat.M1 모듈을 활용 할 수 있도�
 
 <a name="Step-3-SoueceExplanation"></a>
 ## Step 3: 소스 설명
-ST에서 제공하는 X-CUBE-AZURE SDK의 32L496GDISCOVERY 프로젝트를 기반으로 다음과 같이 수정하였습니다.
+ST에서 제공하는 X-CUBE-AZURE SDK의 32L496GDISCOVERY 프로젝트를 기반으로 다음과 같이 수정 및 추가하였습니다.
 
 - **32L496GDISCOVERY(STM32L496AG) => STM32L496-Nucleo(STM32L496ZG)**
   - Virtual COM port UART: UART2 => LPUART1
@@ -248,7 +244,7 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
 #define MDM_RST_GPIO_Port GPIOF
 ```
 
-#### APN/PDP 설정
+#### APN(Access Point Name) 및 PDP(Packet Data Protocol) 설정
 ```cpp
 
 
@@ -272,7 +268,7 @@ int tcpsocketconnection_connect(TCPSOCKETCONNECTION_HANDLE tcpSocketConnectionHa
   addr.sin_len    = sizeof(sockaddr_in_t);
   
   /* 중략 */
-  // 기존 ST Azure SDK의 경우 DNS Query응답을 IPv4로 처리하지만, WIoT-QC01는 DNS Query를 수행하면 IPv6를 return 하기 때문에,
+  // 기존 ST AZURE SDK의 경우 DNS Query응답을 IPv4로 처리하지만, WIoT-QC01는 DNS Query를 수행하면 IPv6를 return 하기 때문에,
   // 도메인 주소에 맞는 IPv4 기반의 IP주소를 static하게 return 하도록 처리하였음
   
   if( strstr(host, "global") != 0)   //  "global.azure-devices-provisioning.net"
@@ -389,15 +385,15 @@ float temp1;
 <a name="Step-4-Build"></a>
 ## Step 4: 예제 코드 빌드 및 실행
 
-### Keil 프로젝트 열기
+#### 1) Keil 프로젝트 열기
 
-[Step 1: 필수 구성 요소](#Step-1-Prerequisites)의 Software란의 [X-CUBE-AZURE SDK](https://github.com/Wiznet/azure-iot-kr)를 Local 저장소에 저장하고, 다음 경로 `azure-iot-kr-master\samples\LTE\Cat.M1\en.x-cube-azure_v2\AZURE_V1.2.0\Projects\STM32L496ZG-Nucleo\Applications\Cloud\Azure\MDK-ARM`에 위치한 Keil 프로젝트를 실행합니다..
+[Step 1: 필수 구성 요소](#Step-1-Prerequisites)의 Software란의 [X-CUBE-AZURE SDK](https://github.com/Wiznet/azure-iot-kr)를 Local 저장소에 저장하고, 다음 경로 `azure-iot-kr-master\samples\LTE\Cat.M1\en.x-cube-azure_v2\AZURE_V1.2.0\Projects\STM32L496ZG-Nucleo\Applications\Cloud\Azure\MDK-ARM`에 위치한 Keil 프로젝트를 실행합니다.
 
 정상적으로 실행되면 다음과 같은 Workspace를 확인 할 수 있으며, 좌측에서 Project Window를 통해 해당 프로젝트에 포함된 소스를 트리형식으로 확인할 수 있습니다.
 
 ![][2]
 
-### 프로그램 빌드
+#### 2) 프로그램 빌드
 
 상단 메뉴의 `Build` 및 `ReBuild` 버튼을 클릭합니다.
 
@@ -412,22 +408,22 @@ float temp1;
 
 > MBED 플랫폼 보드는 `NODE_L496ZG (E:)`와 같은 이름의 디스크 드라이브로 할당되어 있습니다. 이 곳에 생성된 펌웨어 바이너리 파일을 복사하면 됩니다.
 
-### 시리얼 터미널 연결 및 실행
+#### 3) 시리얼 터미널 연결 및 실행
 
 시리얼 터미널 프로그램을 실행하여 **디바이스 연결** 단계에서 확인한 보드의 COM 포트와 Baudrate 115200을 선택하여 시리얼 포트를 연결합니다.
 
 > 디버그 메시지 출력용 시리얼 포트 설정 정보: 115200-8-N-1, None
 
-펌웨어가 정상적으로 업로드되면, ST Azure Dashboard에 디바이스를 등록할 때 사용되는 `DeviceID`를 확인해야 합니다.
+펌웨어가 정상적으로 업로드되면, ST AZURE Dashboard에 디바이스를 등록할 때 사용되는 `DeviceID`를 확인해야 합니다.
 
 ![][4]
 
 
-디바이스가 ST Azure Dashboard로 데이터를 보낼 준비가 되었다면 다음과 같은 디버그 메시지를 확인 할 수 있습니다.
+디바이스가 ST AZURE Dashboard로 데이터를 보낼 준비가 되었다면 다음과 같은 디버그 메시지를 확인 할 수 있습니다.
 
 ![][5]
 
-`STM32L496 Nucleo-144`보드 하단 좌측의 `User button`을 누르면, ST Azure Dashboard로 현재의 온도를 측정하여 온도 데이터를 전송합니다.
+`STM32L496 Nucleo-144`보드 하단 좌측의 `User button`을 누르면, ST AZURE Dashboard로 현재의 온도를 측정하여 온도 데이터를 전송합니다.
 데이터를 정상 적으로 보내면 다음과 같은 디버그 메시지를 확인할 수 있습니다.
 
 ![][6]
@@ -441,12 +437,12 @@ float temp1;
 
 ![][8]
 
-이와 같이 X-CUBE-AZURE SDK 기반으로 WIZnet IoT Shield(WIoT-QC01)와 STM32L496 Nucleo-144를 이용하여 ST Azure Dashboard에 데이터 보내는 것을 확인 해보았습니다.
+이와 같이 X-CUBE-AZURE SDK 기반으로 WIZnet IoT Shield(WIoT-QC01)와 STM32L496 Nucleo-144를 이용하여 ST AZURE Dashboard에 데이터 보내는 것을 확인 해보았습니다.
 
 
 <a name="ReadMore"></a>
 ## 더 보기
-* [ST Azure Dashboard 가이드][st-azure-dashboard]
+* [ST AZURE Dashboard 가이드][st-azure-dashboard]
 * [Raspberry Pi를 이용한 X-CUBE-AZURE SDK 개발 환경 구축][raspberrypi_azure_c_sdk]
 
 

@@ -56,7 +56,7 @@ Device Type은 `Auto-provisioned`로 선택하여 `SUBMIT`버튼을 클릭합니
 
 [nucleo-stm32l496_azure-st-sdk]: ../IoT_device/Connectivities/LTE/Cat.M1/nucleo_stm32l496_azure_st_sdk_bg96.md
 
-[1]: ../../images/st-azure-dashboard-1.png
+[1]: ../../images/st-azure-dashboard-1.PNG
 [2]: ../../images/st-azure-dashboard-2.png
 [3]: ../../images/st-azure-dashboard-3.png
 [4]: ../../images/st-azure-dashboard-4.png

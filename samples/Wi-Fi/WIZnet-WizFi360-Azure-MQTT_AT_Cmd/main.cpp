@@ -22,7 +22,7 @@
 #include "Dht11.h"
 
 // ----------------------------------------------------------------------------------------------------
-// define
+// Define
 // ----------------------------------------------------------------------------------------------------
 /* Default setting */
 #define ON                              1
@@ -76,20 +76,20 @@ DigitalOut _RESET_WIZFI360(MBED_CONF_WIZFI360_RESET);
 AnalogIn _cdsVal(MBED_CONF_WIZFI360_SENSOR_CDS);
 Dht11 _dhtVal(MBED_CONF_WIZFI360_SENSOR_DHT);
 
-/* Sensor Info */
+/* Sensor info */
 struct sensor
 {
-    int ill;
-    int cel;
-    float fah;
-    int hum;
+    int ill;    // illuminance
+    int cel;    // celsius
+    float fah;  // fahrenheit
+    int hum;    // humidity
 };
 
-/* WiFi Info */
+/* WiFi info */
 char ssid[] = "Austin_2.4G";
 char password[] = "01029474191";
 
-/* MQTT Info */
+/* MQTT info */
 char hub_name[] = "MyWizFi360IoTHub";
 char host_name[] = "MyWizFi360IoTHub.azure-devices.net";
 char device_id[] = "MyWizFi360IoTDevice";
@@ -136,10 +136,10 @@ int main()
 {
     sensor sensor_info;
 
-    /* Set Serial */
+    /* Set serial */
     serialPcInit();
 
-    /* Set Device */
+    /* Set device */
     deviceInit_WizFi360();
     deviceReset_WizFi360();
     deviceIsReady_WizFi360();
@@ -156,13 +156,13 @@ int main()
 
     while(true)
     {
-        /* Get Sensor Info */
+        /* Get sensor info */
         sensor_info.ill = deviceGetIllVal_WizFi360();
         sensor_info.cel = deviceGetCelVal_WizFi360();
         sensor_info.fah = deviceGetFahVal_WizFi360();
         sensor_info.hum = deviceGetHumVal_WizFi360();
 
-        /* Publish Message */
+        /* Publish message */
         devicePublishMsg_WizFi360(&sensor_info);
 
         delay(3000);
@@ -248,7 +248,7 @@ void deviceIsReady_WizFi360(void)
 // ----------------------------------------------------------------------------------------------------
 // Functions : Sensor
 // ----------------------------------------------------------------------------------------------------
-/* Illuminance */
+/* illuminance */
 int deviceGetIllVal_WizFi360(void)
 {
     int val = _cdsVal.read_u16() / 100;
@@ -256,7 +256,7 @@ int deviceGetIllVal_WizFi360(void)
     return val;
 }
 
-/* Celsius */
+/* celsius */
 int deviceGetCelVal_WizFi360(void)
 {
     _dhtVal.read();
@@ -266,7 +266,7 @@ int deviceGetCelVal_WizFi360(void)
     return val;
 }
 
-/* Fahrenheit */
+/* fahrenheit */
 float deviceGetFahVal_WizFi360(void)
 {
     _dhtVal.read();
@@ -276,7 +276,7 @@ float deviceGetFahVal_WizFi360(void)
     return val;
 }
 
-/* Humidity */
+/* humidity */
 int deviceGetHumVal_WizFi360(void)
 {
     _dhtVal.read();

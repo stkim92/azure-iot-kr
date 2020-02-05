@@ -86,8 +86,8 @@ struct sensor
 };
 
 /* WiFi info */
-char ssid[] = "Austin_2.4G";
-char password[] = "01029474191";
+char ssid[] = "wiznet";
+char password[] = "0123456789";
 
 /* MQTT info */
 char hub_name[] = "MyWizFi360IoTHub";

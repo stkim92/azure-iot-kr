@@ -12,7 +12,7 @@ Cat.M1, WiFi, Ethernet을 이용한 Azure IoT Hub를 활용시 참고할 수 있
 
 ### /docs/Azure_Cloud
 IoT Hub를 이용한 Azure Cloud를 활용시 참고할 수 있는 문서가 위치합니다.
-* 문서에서 활용된 이미지들이 저장된 폴더입니다.
+
 
 ### /samples
 Cat.M1, WiFi, Ethernet, Gateway를 이용하여 Azure IoT Hub에 연갈하는 예제 코드가 위치합니다. 

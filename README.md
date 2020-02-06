@@ -1,5 +1,5 @@
 # WIZnet Azure IoT Documents and Samples
-이 Repository는 IoT 장치를 Cat.M1, WiFi, Ethernet을 이용하여 Azure IoT Hub에 연결하고 Azure의 다른 서비스(DB, 대시보드 등)와 연동하기 위해 작성되었습니다.
+이 Repository는 IoT 장치를 Cat.M1, WiFi, Ethernet을 이용하여 Azure IoT Hub에 연결하고 Azure의 다른 서비스와 연동하기 위해 작성되었습니다.
 
 ## Folder Structure
 
@@ -51,4 +51,14 @@ Cat.M1, WiFi, Ethernet, Gateway를 이용하여 Azure IoT Hub에 연갈하는 �
 |         Doc        |                            Description                           |
 |:------------------:|:------------------|
 | :heavy_minus_sign: | [WIZ-ASG-200를 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Ethernet/wiz-asg-200_azure_sphere_sdk.md)
+
+
+## Support
+
+[![WIZnet Developer Forum][forum]](https://forum.wiznet.io/c/korean-forum/oshw/)
+
+**[WIZnet Developer Forum](https://forum.wiznet.io/c/korean-forum/oshw/)** 에서 전세계의 WIZnet 기술 전문가들에게 질문하고 의견을 전달할 수 있습니다.<br>지금 방문하세요!
+
+
+[forum]: https://github.com/Wiznet/wiznet-iot-shield-mbed-kr/blob/master/docs/imgs/forum.jpg
 

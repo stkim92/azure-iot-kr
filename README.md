@@ -1,6 +1,6 @@
 # WIZnet Azure IoT Documents and Samples
 이 Repository는 IoT 장치를 Cat.M1, WiFi, Ethernet을 이용하여 Azure IoT Hub에 연결하고 Azure의 다른 서비스와 연동하기 위해 작성되었습니다.
-*본 자료는 docs.microsoft.com 페이지를 참고하여 작성되었습니다.
+(docs.microsoft.com 페이지를 참고하여 작성되었습니다.)
 
 ## Folder Structure
 
@@ -62,7 +62,7 @@ Cat.M1, WiFi, Ethernet, Gateway를 이용하여 Azure IoT Hub에 연갈하는 �
 | :heavy_check_mark: | [SAS Token 생성하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_sas_token.md)
 | :heavy_check_mark: | [Azure Portal을 사용하여 Blob Storage 만들기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_blob_storage_through_azure_portal.md)
 | :heavy_check_mark: | [작업 입 · 출력 구성 및 변환 Query 정의](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/configure_job_input_output_and_define_the_transformation_query.md)
-
+*본 자료는 docs.microsoft.com 페이지를 참고하여 작성되었습니다.
 ## Support
 
 [![WIZnet Developer Forum][forum]](https://forum.wiznet.io/c/korean-forum/oshw/)

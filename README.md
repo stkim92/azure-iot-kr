@@ -22,7 +22,7 @@
 ## WiFi
 |         Doc        |                            Description                           |
 |:------------------:|:------------------|
-| :heavy_multiplication_x: | [WizFi630S를 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/Gateway/wizfi630s_azure_c_sdk.md)
+| :heavy_minus_sign: | [WizFi630S를 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/Gateway/wizfi630s_azure_c_sdk.md)
 | :heavy_check_mark: | [PC와 WizFi360(MQTT AT Command)을 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_mqtt_atcmd_wizfi360.md)
 | :heavy_check_mark: | [PC와 WizFi360(Azure AT Command)을 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_azure_atcmd_wizfi360.md)
 

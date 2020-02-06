@@ -7,24 +7,22 @@
 [Azure Portal을 사용하여 IoT Hub 만들기](https://docs.microsoft.com/ko-kr/azure/iot-hub/iot-hub-create-through-portal)
 
 
-
 ## Cat.M1
-ST MCU와 Cat.M1 모듈을 이용하여 Azure IoT Hub에 연결하기(링크 준비중)
-
-라즈베리파이와 Cat.M1 모듈을 이용하여 Azure IoT Hub에 연결하기(링크 준비중)
-
-PC와 Cat.M1모듈을 이용하여 Azure IoT Hub에 연결하기(링크 준비중)
-
-
+|         Doc        |                            Description                           |
+|:------------------:|:------------------|
+| :heavy_minus_sign: | ST MCU와 Cat.M1 모듈을 이용하여 Azure IoT Hub에 연결하기
+| :heavy_minus_sign: | 라즈베리파이와 Cat.M1 모듈을 이용하여 Azure IoT Hub에 연결하기
+| :heavy_minus_sign: | PC와 Cat.M1모듈을 이용하여 Azure IoT Hub에 연결하기
 
 ## WiFi
-WizFi630S를 이용하여 Azure IoT Hub에 연결하기(링크 준비중)
-
-[PC와 WizFi360(MQTT AT Command)을 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_mqtt_atcmd_wizfi360.md)
-
-[PC와 WizFi360(Azure AT Command)을 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_azure_atcmd_wizfi360.md)
-
-
+|         Doc        |                            Description                           |
+|:------------------:|:------------------|
+| :heavy_minus_sign: | WizFi630S를 이용하여 Azure IoT Hub에 연결하기
+| :heavy_check_mark: | [PC와 WizFi360(MQTT AT Command)을 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_mqtt_atcmd_wizfi360.md)
+| :heavy_check_mark: | [PC와 WizFi360(Azure AT Command)을 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_azure_atcmd_wizfi360.md)
 
 ## Ethernet
-[WIZ-ASG-200를 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Ethernet/wiz-asg-200_azure_sphere_sdk.md)
+|         Doc        |                            Description                           |
+|:------------------:|:------------------|
+| :heavy_check_mark: | [WIZ-ASG-200를 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Ethernet/wiz-asg-200_azure_sphere_sdk.md)
+

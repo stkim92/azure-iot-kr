@@ -1,6 +1,27 @@
 # WIZnet Azure IoT Documents and Samples
 이 Repository는 IoT 장치를 Cat.M1, WiFi, Ethernet을 이용하여 Azure IoT Hub에 연결하고 Azure의 다른 서비스(DB, 대시보드 등)와 연동하기 위해 작성되었습니다.
 
+## Folder Structure
+
+### /docs/IoT_device/Connectivity
+Cat.M1, WiFi, Ethernet을 이용한 Azure IoT Hub를 활용시 참고할 수 있는 문서가 위치합니다.
+* LTE/Cat.M1 : Cat.M1을 이용하여 Azure IoT Hub에 연결시 참고할 수 있는 문서
+* Wi-Fi : WizFi360을 이용하여 Azure IoT Hub에 연결시 참고할 수 있는 문서
+* Wi-Fi/Gateway : WizFi630을 이용하여 Azure IoT Hub에 연결시 참고할 수 있는 문서
+* Ethernet : WIZ-ASG-200을 이용하여 Azure IoT Hub에 연결시 참고할 수 있는 문서
+
+### /docs/Azure_Cloud
+IoT Hub를 이용한 Azure Cloud를 활용시 참고할 수 있는 문서가 위치합니다.
+* 문서에서 활용된 이미지들이 저장된 폴더입니다.
+
+### /samples
+Cat.M1, WiFi, Ethernet, Gateway를 이용하여 Azure IoT Hub에 연갈하는 예제 코드가 위치합니다. 
+* LTE : MCU, 라즈베리파이, PC를 이용한 예제 코드
+* Wi-Fi: WizFi360등 을 이용한 예제 코드
+* Ethernet: WIZ-ASG-200을 이용한 예제 코드
+* Gateway : WizFi630을 이용한 예제 코드
+
+
 
 ## Key features and Roadmap
 :heavy_check_mark: 활용 가능  :heavy_minus_sign: 작성중  :heavy_multiplication_x: 지원 예정

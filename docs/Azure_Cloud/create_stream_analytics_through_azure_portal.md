@@ -56,6 +56,8 @@ Stream Analytics에 대한 내용은 다음을 참조 바랍니다.
 
 - [Azure Portal을 사용하여 Blob Storage 만들기][Link-create_blob_storage_through_azure_portal]
 
+- [작업 입 · 출력 구성 및 변환 Query 정의][Link-Configure_Job_Input_Output_And_Define_The_Transformation_Query]
+
 
 
 [Link-Azure-Portal]: https://portal.azure.com/
@@ -66,3 +68,4 @@ Stream Analytics에 대한 내용은 다음을 참조 바랍니다.
 [Link-Create_Stream_Analytics_5]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_stream_analytics_5.png
 [Link-Create_Stream_Analytics_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_stream_analytics_6.png
 [Link-create_blob_storage_through_azure_portal]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_blob_storage_through_azure_portal.md
+[Link-Configure_Job_Input_Output_And_Define_The_Transformation_Query]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/configure_job_input_output_and_define_the_transformation_query.md

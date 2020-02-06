@@ -70,7 +70,7 @@ Blob Storage에 대한 내용은 다음을 참조 바랍니다.
 <a name="Read_More"></a>
 ## 더 보기
 
-- [Azure Portal을 사용하여 IoT Hub 만들기][Link-Create_IoT_Hub_Through_Azure_portal]
+- [Azure Portal을 사용하여 IoT Hub 만들기][Link-Create_IoT_Hub_Through_Azure_Portal]
 
 - [Azure Portal을 사용하여 Stream Analytics 만들기][Link-Create_Stream_Analytics_Through_Azure_Portal]
 
@@ -87,5 +87,5 @@ Blob Storage에 대한 내용은 다음을 참조 바랍니다.
 [Link-Create_Blob_Storage_10]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_blob_storage_10.png
 [Link-Create_Blob_Storage_11]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_blob_storage_11.png
 [Link-Create_Blob_Storage_12]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_blob_storage_12.png
-[Link-Create_IoT_Hub_Through_Azure_portal]: https://docs.microsoft.com/ko-kr/azure/iot-hub/iot-hub-create-through-portal
+[Link-Create_IoT_Hub_Through_Azure_Portal]: https://docs.microsoft.com/ko-kr/azure/iot-hub/iot-hub-create-through-portal
 [Link-Create_Stream_Analytics_Through_Azure_Portal]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_stream_analytics_through_azure_portal.md

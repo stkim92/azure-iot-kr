@@ -8,13 +8,13 @@
 
 - [소개](#Introduction)
 
-- [필수 구성 요소](#Prerequisites)
+- [Step 1: 필수 구성 요소](#Prerequisites)
 
-- [Device 준비](#Prepare_Device)
+- [Step 2: Device 준비](#Prepare_Device)
 
-- [동작 예제](#Example)
+- [Step 3: 동작 예제](#Example)
 
-- [동작 예제 결과](#Result)
+- [Step 4: 동작 예제 결과](#Result)
 
 - [더 보기](#Read_More)
 
@@ -26,7 +26,16 @@
 > [**Azure Portal**][Link-Azure-Portal]에 Login을 합니다. 계정이 없는 경우, 계정 생성 후에 Login을 진행합니다.
 >
 > ※ 본 문서에는 [**체험 계정**][Link-Azure-Account-Free]으로 진행합니다.
-
+>
+> Azure Portal을 사용하여 IoT Hub 만들기 등 앞선 일련의 과정에 대하여 [Azure Cloud 소개][Link-Azure_Cloud_Introduction]를 참조하시기 바랍니다.
+>
+> * [Azure Portal을 사용하여 IoT Hub 만들기][Link-Create_IoT_Hub_Through_Azure_Portal]
+>
+> * [Azure Portal을 사용하여 Blob Storage 만들기][Link-Create_Blob_Storage_Through_Azure_Portal]
+>
+> * [Azure Portal을 사용하여 Stream Analytics 만들기][Link-Create_Stream_Analytics_Through_Azure_Portal]
+>
+> * [작업 입 · 출력 구성 및 변환 Query 정의][Link-Configure_Job_Input_Output_And_Define_The_Transformation_Query]
 
 
 <a name="Introduction"></a>
@@ -44,12 +53,11 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
 본 문서는 WizFi360 MQTT AT Command 이용하여 Microsoft Azure Service 연결 방법에 대한 가이드를 제공합니다.
 
-> Azure Portal을 사용하여 IoT Hub 만들기 등 앞선 일련의 과정에 대하여 [Azure Cloud 소개][Link-Azure_Cloud_Introduction]를 참조하시기 바랍니다.
 
 
 
 <a name="Prerequisites"></a>
-## 필수 구성 요소
+## Step 1: 필수 구성 요소
 
 본 문서를 따라하기에 전에 다음 항목이 준비되어야 합니다.
 
@@ -68,7 +76,7 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 	- Preferred Serial Terminal (TeraTerm, Hercules, etc . . .)
 
 <a name="Prepare_Device"></a>
-## Device 준비
+## Step 2: Device 준비
 
 1. Hardware 준비
 
@@ -93,7 +101,7 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
 
 <a name="Example"></a>
-## 동작 예제
+## Step 3: 동작 예제
 
 **WizFi360**의 조금 더 상세한 **사용 방법**은 [**Quick Start Guide**][Link-Wizfi360-Quick_Start_Guide], **AT Command**는 [**AT Instruction Set**][Link-WizFi360-At_Instruction_Set]을 참고 바랍니다.
 
@@ -158,7 +166,7 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
 
 <a name="Result"></a>
-## 동작 예제 결과
+## Step 4: 동작 예제 결과
 
 <a name="Run_Stream_Analytics"></a>
 1. Stream Analytics 작업 시작
@@ -195,13 +203,24 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
 <a name="Read_More"></a>
 ## 더 보기
-준비 중
+
+- [작업 입 · 출력 구성 및 변환 Query 정의][Link-Configure_Job_Input_Output_And_Define_The_Transformation_Query]
+
+- WizFi360 MQTT AT Command를 이용한 Auzre IoT Hub 연동 예제
+
+	- Mbed Example
+
+	- Arduino Example
 
 
 [Link-Azure-Portal]: https://portal.azure.com/
 [Link-Azure-Account-Free]: https://azure.microsoft.com/ko-kr/free/
 [Link-Data_Communication_Structure]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_data_communication_structure.png
 [Link-Azure_Cloud_Introduction]: https://github.com/Wiznet/azure-iot-kr/tree/master/docs/Azure_Cloud
+[Link-Create_IoT_Hub_Through_Azure_Portal]: https://docs.microsoft.com/ko-kr/azure/iot-hub/iot-hub-create-through-portal
+[Link-Create_Blob_Storage_Through_Azure_Portal]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_blob_storage_through_azure_portal.md
+[Link-Create_Stream_Analytics_Through_Azure_Portal]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_stream_analytics_through_azure_portal.md
+[Link-Configure_Job_Input_Output_And_Define_The_Transformation_Query]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/configure_job_input_output_and_define_the_transformation_query.md
 [Link-Wizfi360-Evb-Shield]: https://wizwiki.net/wiki/doku.php/products:wizfi360:start
 [Link-Required_Item]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_required_item.png
 [Link-Set_Wizfi360_Evb_Shield_Sw1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_set_wizfi360_evb_shield_sw1.png

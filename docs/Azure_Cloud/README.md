@@ -9,6 +9,7 @@
 - [Azure Portal을 사용하여 IoT Hub 만들기](https://docs.microsoft.com/ko-kr/azure/iot-hub/iot-hub-create-through-portal)
 - [Azure Portal을 사용하여 Blob Storage 만들기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_blob_storage_through_azure_portal.md)
 - [Azure Portal을 사용하여 Stream Analytics 만들기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_stream_analytics_through_azure_portal.md)
+- [작업 입 · 출력 구성 및 변환 Query 정의](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/configure_job_input_output_and_define_the_transformation_query.md)
 - [웹 응용 프로그램에서 Azure IoT hub의 실시간 센서 데이터 시각화](https://docs.microsoft.com/ko-kr/azure/iot-hub/iot-hub-live-data-visualization-in-web-apps)
 - [Power BI를 사용하여 Azure IoT Hub에서 실시간 센서 데이터 시각화](https://docs.microsoft.com/ko-kr/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi)
 - [Azure Machine Learning에서 IoT Hub의 센서 데이터를 사용한 일기 예보](https://docs.microsoft.com/ko-kr/azure/iot-hub/iot-hub-weather-forecast-machine-learning)

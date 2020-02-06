@@ -10,7 +10,6 @@
 
 - [SAS Token 생성하기](#Create_Sas_Token)
 
-- [더 보기](#Read_More)
 
 
 <a name="Prerequisites"></a>
@@ -59,12 +58,6 @@
 7. **TTL(Days)** 값 입력한 후, **Generate**를 눌러 생성합니다.
 
  ![][Link-Create_Sas_Token_7]
-
-
-
-<a name="Read_More"></a>
-## 더 보기
-준비 중
 
 
 

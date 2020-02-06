@@ -16,8 +16,8 @@
 <a name="Prerequisites"></a>
 ## 시작하기 전에
 > * [**Azure Portal**][Link-Azure-Portal]에 Login을 합니다. 계정이 없는 경우, 계정 생성 후에 Login을 진행합니다.
-
->  ※ 본 문서에는 [**체험 계정**][Link-Azure-Account-Free]으로 진행합니다.
+>
+> ※ 본 문서에는 [**체험 계정**][Link-Azure-Account-Free]으로 진행합니다.
 
 
 
@@ -49,7 +49,7 @@ Stream Analytics에 대한 내용은 다음을 참조 바랍니다.
 
 <a name="Read_More"></a>
 ## 더 보기
-- Azure Portal을 사용하여 Blob Storage 만들기
+- [Azure Portal을 사용하여 Blob Storage 만들기][Link-create_blob_storage_through_azure_portal]
 
 
 
@@ -60,3 +60,4 @@ Stream Analytics에 대한 내용은 다음을 참조 바랍니다.
 [Link-Create_Stream_Analytics_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_stream_analytics_3.png
 [Link-Create_Stream_Analytics_5]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_stream_analytics_5.png
 [Link-Create_Stream_Analytics_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_stream_analytics_6.png
+[Link-create_blob_storage_through_azure_portal]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_blob_storage_through_azure_portal.md

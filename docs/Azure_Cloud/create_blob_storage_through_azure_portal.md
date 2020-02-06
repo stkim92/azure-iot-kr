@@ -16,8 +16,8 @@
 <a name="Prerequisites"></a>
 ## 시작하기 전에
 > * [**Azure Portal**][Link-Azure-Portal]에 Login을 합니다. 계정이 없는 경우, 계정 생성 후에 Login을 진행합니다.
-
->  ※ 본 문서에는 [**체험 계정**][Link-Azure-Account-Free]으로 진행합니다.
+>
+> ※ 본 문서에는 [**체험 계정**][Link-Azure-Account-Free]으로 진행합니다.
 
 
 
@@ -65,8 +65,9 @@ Blob Storage에 대한 내용은 다음을 참조 바랍니다.
 
 <a name="Read_More"></a>
 ## 더 보기
-- Azure Portal을 사용하여 IoT Hub 만들기
-- Azure Portal을 사용하여 Stream Analytics 만들기
+- [Azure Portal을 사용하여 IoT Hub 만들기][Link-Create_IoT_Hub_Through_Azure_portal]
+
+- [Azure Portal을 사용하여 Stream Analytics 만들기][Link-Create_Stream_Analytics_Through_Azure_Portal]
 
 
 
@@ -74,10 +75,12 @@ Blob Storage에 대한 내용은 다음을 참조 바랍니다.
 [Link-Azure-Account-Free]: https://azure.microsoft.com/ko-kr/free/
 [Link-Introduction_To_Azure_Blob_Storage]: https://docs.microsoft.com/ko-kr/azure/storage/blobs/storage-blobs-introduction
 [Link-Create_Blob_Storage_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_blob_storage_1.png
-[Link-Create_Blob_Storage_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_blob_storage_2.png
+[Link-Create_Blob_Storage_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_creathroughthroughte_blob_storage_2.png
 [Link-Create_Blob_Storage_4]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_blob_storage_4.png
 [Link-Create_Blob_Storage_5]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_blob_storage_5.png
 [Link-Create_Blob_Storage_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_blob_storage_6.png
 [Link-Create_Blob_Storage_10]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_blob_storage_10.png
 [Link-Create_Blob_Storage_11]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_blob_storage_11.png
 [Link-Create_Blob_Storage_12]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_blob_storage_12.png
+[Link-Create_IoT_Hub_Through_Azure_portal]: https://docs.microsoft.com/ko-kr/azure/iot-hub/iot-hub-create-through-portal
+[Link-Create_Stream_Analytics_Through_Azure_Portal]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_stream_analytics_through_azure_portal.md

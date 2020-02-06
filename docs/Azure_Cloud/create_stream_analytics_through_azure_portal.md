@@ -15,7 +15,7 @@
 
 <a name="Prerequisites"></a>
 ## 시작하기 전에
-> * [**Azure Portal**][Link-Azure-Portal]에 Login을 합니다. 계정이 없는 경우, 계정 생성 후에 Login을 진행합니다.
+> [**Azure Portal**][Link-Azure-Portal]에 Login을 합니다. 계정이 없는 경우, 계정 생성 후에 Login을 진행합니다.
 >
 > ※ 본 문서에는 [**체험 계정**][Link-Azure-Account-Free]으로 진행합니다.
 
@@ -23,7 +23,7 @@
 
 <a name="Introduction"></a>
 ## 소개
-이 문서는 Azure Portal을 사용하여 **Stream Analytics 생성**하는 방법을 설명합니다.
+본 문서는 Azure Portal을 사용하여 **Stream Analytics 생성**하는 방법을 설명합니다.
 
 Stream Analytics에 대한 내용은 다음을 참조 바랍니다.
 

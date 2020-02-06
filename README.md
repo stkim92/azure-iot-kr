@@ -1,5 +1,5 @@
 # WIZnet Azure IoT Documents and Samples
-이 Repository는 IoT 장치를 Cat.M1, WiFi, Ethernet을 이용하여 Azure IoT Hub에 연결하고 Azure의 다른 서비스(DB, 대시보드 등)와 연동하기 위해 작성되었습니다.
+이 Repository는 IoT 장치를 Cat.M1, WiFi, Ethernet을 이용하여 Azure IoT Hub에 연결하고 Azure의 다른 서비스와 연동하기 위해 작성되었습니다.
 
 ## Folder Structure
 

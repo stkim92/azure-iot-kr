@@ -70,7 +70,7 @@
 
 [Link-Azure-Portal]: https://portal.azure.com/
 [Link-Azure-Account-Free]: https://azure.microsoft.com/ko-kr/free/
-[Link-Create_Ssa_Token_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_1.png
+[Link-Create_Sas_Token_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_1.png
 [Link-Create_Sas_Token_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_2.png
 [Link-Create_Sas_Token_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_sas_token_3.png
 [Link-Device_Explorer]:https://github.com/Wiznet/azure-iot-kr/blob/master/tools/Device%20Explorer/SetupDeviceExplorer.msi

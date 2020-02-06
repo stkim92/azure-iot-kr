@@ -163,33 +163,33 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 <a name="Run_Stream_Analytics"></a>
 ### 1. Stream Analytics 작업 시작
 
-Stream Analytics에서 **개요** > **시작** > **현재** > **시작**을 선택합니다.
+ Stream Analytics에서 **개요** > **시작** > **현재** > **시작**을 선택합니다.
 
-![][Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_1]
+ ![][Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_1]
 
-![][Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_2]
+ ![][Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_2]
 
-![][Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_3]
+ ![][Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_3]
 
 ### 2. 출력 확인
 
-1) Blob Storage에서 **개요** > **컨테이너**를 선택합니다.
+ 1) Blob Storage에서 **개요** > **컨테이너**를 선택합니다.
 
-![][Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_4]
+ ![][Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_4]
 
-2) 목록에서 Container를 선택하여 엽니다.
+ 2) 목록에서 Container를 선택하여 엽니다.
 
-![][Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_5]
+ ![][Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_5]
 
-3) 목록에서 Blob을 선택하여 엽니다.
+ 3) 목록에서 Blob을 선택하여 엽니다.
 
-![][Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_6]
+ ![][Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_6]
 
-4) **편집**을 눌러 WizFi360으로부터 수신한 Data를 확인합니다.
+ 4) **편집**을 눌러 WizFi360으로부터 수신한 Data를 확인합니다.
 
-![][Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_7]
+ ![][Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_7]
 
-![][Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_8]
+ ![][Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_8]
 
 
 

@@ -32,17 +32,17 @@
 <a name="Introduction"></a>
 ## 소개
 
-Microsoft Azure Service에 WizFi360을 연동하여, Data를 Cloud로 전송하고, Monitoring을 할 수 있습니다.
+**Microsoft Azure Service**에 **WizFi360**을 **연동**하여, Data를 Cloud로 전송하고, Monitoring을 할 수 있습니다.
 
 Data 통신은 다음과 같은 구조로 이루어집니다.
 
 ![][Link-Data_Communication_Structure]
 
-WizFi360 MQTT AT Command를 이용하여, IoT Hub Service 연결 및 Data 송신을 합니다.
+**MQTT AT Command**를 이용하여, IoT Hub Service 연결 및 Data 송신을 합니다.
 
 IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Blob Storage로 저장이 됩니다.
 
-본 문서는 WizFi360 이용하여 Microsoft Azure Service 연결 방법에 대한 가이드를 제공합니다.
+본 문서는 WizFi360 MQTT AT Command 이용하여 Microsoft Azure Service 연결 방법에 대한 가이드를 제공합니다.
 
 > Azure Portal을 사용하여 IoT Hub 만들기 등 앞선 일련의 과정에 대하여 [Azure Cloud 소개][Link-Azure_Cloud_Introduction]를 참조하시기 바랍니다.
 
@@ -72,7 +72,7 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
 1. Hardware 준비
 
- WizFi360-EVB-Shield는 Standalone Mode로 사용되어 집니다. 따라서 Micro USB를 사용하기 위하여 다음과 같이 설정 필요합니다.
+ WizFi360-EVB-Shield는 **Standalone Mode**로 사용되어 집니다. 따라서 **Micro USB**를 사용하기 위하여 다음과 같이 설정 필요합니다.
 
  > * SW1 : On
 
@@ -82,7 +82,7 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
  Hardware 설정 후, Micro 5 pin USB Cable을 이용하여 WizFi360 EVB Shield를 Desktop 혹은 Laptop Computer와 연결을 합니다.
 
- 장치 관리자에서 WizFi360-EVB-Shield와 연결된 COM Port를 확인 할 수 있습니다.
+ **장치 관리자**에서 WizFi360-EVB-Shield와 연결된 **COM Port**를 확인 할 수 있습니다.
 
  ![][Link-Device-Management]
 
@@ -173,7 +173,7 @@ Stream Analytics에서 **개요** > **시작** > **현재** > **시작**을 선�
 
 ### 2. 출력 확인
 
-1) Blob Storage에서 **게요** > **컨테이너**를 선택합니다.
+1) Blob Storage에서 **개요** > **컨테이너**를 선택합니다.
 
 ![][Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_4]
 

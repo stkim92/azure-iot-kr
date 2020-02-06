@@ -3,6 +3,7 @@
 
 
 ## 목차
+
 - [시작하기 전에](#Prerequisites)
 
 - [소개](#Introduction)
@@ -15,6 +16,7 @@
 
 <a name="Prerequisites"></a>
 ## 시작하기 전에
+
 > [**Azure Portal**][Link-Azure-Portal]에 Login을 합니다. 계정이 없는 경우, 계정 생성 후에 Login을 진행합니다.
 >
 > ※ 본 문서에는 [**체험 계정**][Link-Azure-Account-Free]으로 진행합니다.
@@ -23,6 +25,7 @@
 
 <a name="Introduction"></a>
 ## 소개
+
 본 문서는 Azure Portal을 사용하여 **Stream Analytics 생성**하는 방법을 설명합니다.
 
 Stream Analytics에 대한 내용은 다음을 참조 바랍니다.
@@ -33,6 +36,7 @@ Stream Analytics에 대한 내용은 다음을 참조 바랍니다.
 
 <a name="Create_Stream_Analytics"></a>
 ## Stream Analytics 만들기
+
 1. Azure Portal에서 **리소스 만들기** > **분석** > **Stream Analytics job**을 선택합니다.
 
  ![][Link-Create_Stream_Analytics_1]
@@ -49,6 +53,7 @@ Stream Analytics에 대한 내용은 다음을 참조 바랍니다.
 
 <a name="Read_More"></a>
 ## 더 보기
+
 - [Azure Portal을 사용하여 Blob Storage 만들기][Link-create_blob_storage_through_azure_portal]
 
 

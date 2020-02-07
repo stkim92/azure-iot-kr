@@ -16,7 +16,7 @@ IoT Hub를 이용한 Azure Cloud를 활용시 참고할 수 있는 문서가 위
 
 
 ### /samples
-Cat.M1, WiFi, Ethernet, Gateway를 이용하여 Azure IoT Hub에 연갈하는 예제 코드가 위치합니다. 
+Cat.M1, WiFi, Ethernet, Gateway를 이용하여 Azure IoT Hub에 하는 예제 코드가 위치합니다. 
 * LTE : MCU, 라즈베리파이, PC를 이용한 예제 코드
 * Wi-Fi: WizFi360등 을 이용한 예제 코드
 * Ethernet: WIZ-ASG-200을 이용한 예제 코드
@@ -25,7 +25,7 @@ Cat.M1, WiFi, Ethernet, Gateway를 이용하여 Azure IoT Hub에 연갈하는 �
 
 
 ## Key features and Roadmap
-:heavy_check_mark: 활용 가능  :heavy_minus_sign: 작성중  :heavy_multiplication_x: 지원 예정
+:heavy_check_mark: 준비 완료  :heavy_minus_sign: 준비중
 
 ## 사전준비
 |         Doc        |                            Description                           |

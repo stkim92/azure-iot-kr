@@ -2,8 +2,11 @@
 
 본 문서는 Microsoft가 제공하는 Azure Cloud 서비스와 Azure Cloud 서비스를 구성하는데 필요한 원본 자료 링크를 추가하여 설명합니다.
 
+
 ## Azure IoT Hub
-[TODO] Azure IoT Hub 설명~
+
+Azure IoT Hub는 IoT 장비와 Azure Cloud 간의 양방양 통신을 가능하게 하는 관리형 서비스 입니다.
+아래의 링크에서 보다 자세한 내용과 Azure IoT Hub와 연동할 수 있는 Azure Cloud 서비스 사용 예제를 확인하실 수 있습니다.
 
 - [Azure IoT Hub란](https://docs.microsoft.com/ko-kr/azure/iot-hub/about-iot-hub)
 - [Azure Portal을 사용하여 IoT Hub 만들기](https://docs.microsoft.com/ko-kr/azure/iot-hub/iot-hub-create-through-portal)
@@ -13,8 +16,8 @@
 
 
 ## Azure IoT Central
-
-[TODO] Azure IoT Central 설명~
+Azure IoT Central은 IoT 디바이스 관리, 연결, 모니터링 등을 수행하며 클라우드 기반의 엔터프라이즈 급 서버 환경을 손쉽게 구축할 수 있도록 도와주는 Saas 솔루션 입니다.
+아래의 링크에서 보다 자세한 내용과 Azure IoT Central을 이용하여 각 분야에서 사용하는 예제를 확인하실 수 있습니다.
 
 - [Azure IoT Central 이란?](https://docs.microsoft.com/ko-kr/azure/iot-central/core/overview-iot-central)
 - [Azure IoT Central을 사용하여 소매업 솔루션 빌드](https://docs.microsoft.com/ko-kr/azure/iot-central/retail/overview-iot-central-retail-pnp)
@@ -23,9 +26,11 @@
 - [Azure IoT Central을 사용하여 정부 기관 솔루션 빌드](https://docs.microsoft.com/ko-kr/azure/iot-central/government/overview-iot-central-government)
 
 ## Azure IoT Explorer 
+IoT Explorer를 사용하면, 로컬 컴퓨터에서 IoT 디바이스가 보내는 데이터를 원격 모니터링할 수 있으며, IoT 디바이스로 제어 메시지를 보낼 수 있습니다.
+아래의 링크에서 보다 자세한 내용과 사용 방법을 확인하실 수 있습니다.
 
 - [Azure IoT Plug and Play (PnP) Device Explorer](https://github.com/Azure/azure-iot-explorer#getting-azure-iot-explorer)
 
 ## Azure IoT Hub와 연동가능한 3rd-Party Cloud
 - [ST AZURE Dashboard]()
-  - ST AZURE SDK를 사용해야함
+  - ST에서 제공하는 `X-CUBE-AZURE` SDK를 사용하면 ST AZURE Dashboard에 손쉽게 연동할 수 있습니다.

@@ -5,8 +5,9 @@
 -   [소개](#Introduction)
 -   [Step 1: 필수 구성 요소](#Step-1-Prerequisites)
 -   [Step 2: 디바이스 준비](#Step-2-PrepareDevice)
--   [Step 3: 소스 설명](#Step-3-SoueceExplanation)
--   [Step 4: 예제 코드 빌드 및 실행](#Step-4-Build)
+-   [Step 3: 주요 소스 설명](#Step-3-SoueceExplanation)
+-   [Step 4: 예제 코드 빌드](#Step-4-Build)
+-   [Step 5: 예제 실행 결과](#Step-5-Execute)
 -   [더 보기](#ReadMore)
 
 
@@ -28,19 +29,19 @@
 ## Step 1: 필수 구성 요소
 이 문서를 따라하기 전에 다음과 같은 것들이 준비되어야 합니다.
 
-- **Hardware**
+### Hardware
   - Keil Compiler를 사용할 수 있는 PC
   - [STM32L496 Nucleo-144](https://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-mpu-eval-tools/stm32-mcu-mpu-eval-tools/stm32-nucleo-boards/nucleo-l496zg.html)
   - WIZnet IoT Shield ([Openhouse **이용신청**](https://www.sktiot.com/iot/support/openhouse/reservation/openhouseMain) 시, 무상으로 3개월간 WIZnet IoT Shield를 대여할 수 있습니다.)
     - WIoT-QC01 (앰투앰넷 BG96)
 
-- **Software**
+### Software
   - 디버깅을 위한 시리얼 터미널 프로그램 ([Token2Shell](https://choung.net/token2shell), [PuTTY](https://www.putty.org), [TeraTerm](https://ttssh2.osdn.jp) 등)
   - Keil Compiler(Version: MDK-ARM Plus 5.21a)
   - [X-CUBE-AZURE SDK](https://github.com/Wiznet/azure-iot-kr/)
 
 
-- **Cat.M1 모듈의 (시험 망)개통**
+### Cat.M1 모듈의 (시험 망)개통 
   - Cat.M1 모듈로 통신 기능을 구현하려면 **망 개통 과정**이 선행되어야 합니다.
     - 한국의 경우, 국내 Cat.M1 서비스 사업자인 SK Telecom의 망 개통 과정이 필요합니다.
 
@@ -51,7 +52,7 @@
 <a name="Step-2-PrepareDevice"></a>
 ## Step 2: 디바이스 준비
 
-#### 1) 하드웨어 설정
+### 1) 하드웨어 설정
 
 WIZnet IoT Shield를 STM32L496 Nucleo-144 보드와 결합합니다.
 - 두 장치 모두 Arduino UNO Rev3 호환 핀 커넥터를 지원하므로 손쉽게 결합(Stacking) 할 수 있습니다.
@@ -71,7 +72,7 @@ WIZnet IoT Shield는 다양한 밴더의 Cat.M1 모듈을 활용 할 수 있도�
 > - 본 가이드에서는 WIoT-QC01을 사용하며, `D0`, `D1`핀을 UART로 활용할 예정입니다.
 
 
-#### 2) 디바이스 연결
+### 2) 디바이스 연결
 
 하드웨어 설정 후 USB 커넥터를 이용하여 STM32L496 Nucleo-144 보드와 PC를 연결합니다. PC 운영체제에서 보드와 연결된 COM 포트를 확인할 수 있습니다.
 > 윈도우 운영체제의 경우, 장치 관리자(Device Manager)에서 COM 포트를 확인할 수 있습니다.
@@ -85,7 +86,7 @@ WIZnet IoT Shield는 다양한 밴더의 Cat.M1 모듈을 활용 할 수 있도�
 
 
 <a name="Step-3-SoueceExplanation"></a>
-## Step 3: 소스 설명
+## Step 3: 주요 소스 설명
 ST에서 제공하는 X-CUBE-AZURE SDK의 32L496GDISCOVERY 프로젝트를 기반으로 다음과 같이 수정 및 추가하였습니다.
 
 - **32L496GDISCOVERY(STM32L496AG) => STM32L496-Nucleo(STM32L496ZG)**
@@ -101,11 +102,7 @@ ST에서 제공하는 X-CUBE-AZURE SDK의 32L496GDISCOVERY 프로젝트를 기�
 - **HAL 기반 ADC를 이용하여 WIZnet IoT Shield의 온도 센서 사용**
 
 
-
-
-
-
-#### Virtual COM port UART
+### Virtual COM port UART
 ```cpp
 static void Console_UART_Init(void)
 {
@@ -166,7 +163,7 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
 }
 ```
 
-#### Cat.M1 모듈과 통신하는 UART
+### Cat.M1 모듈과 통신하는 UART
 ```cpp
 void MX_USART3_UART_Init(void)
 {
@@ -237,7 +234,7 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
 }
 ```
 
-#### Cat.M1 모듈 PWR/RST 핀 수정
+### Cat.M1 모듈 PWR/RST 핀 수정
 ```cpp
 #define MDM_PWR_EN_Pin GPIO_PIN_15
 #define MDM_PWR_EN_GPIO_Port GPIOD
@@ -246,7 +243,7 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
 #define MDM_RST_GPIO_Port GPIOF
 ```
 
-#### APN(Access Point Name) 및 PDP(Packet Data Protocol) 설정
+### APN(Access Point Name) 및 PDP(Packet Data Protocol) 설정
 ```cpp
 
 
@@ -260,7 +257,7 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
  cellular_params.nfmc_active  = 0U;
 ```
 
-#### IPv4 기반 주소 처리
+### IPv4 기반 주소 처리
 ```cpp
 int tcpsocketconnection_connect(TCPSOCKETCONNECTION_HANDLE tcpSocketConnectionHandle, const char* host, const int port)
 {
@@ -288,7 +285,7 @@ int tcpsocketconnection_connect(TCPSOCKETCONNECTION_HANDLE tcpSocketConnectionHa
 }
 ```
 
-#### HAL 기반 ADC를 이용한 온도센서 사용
+### HAL 기반 ADC를 이용한 온도센서 사용
 ```cpp
 static void MX_ADC1_Init(void)
 {
@@ -387,7 +384,7 @@ float temp1;
 <a name="Step-4-Build"></a>
 ## Step 4: 예제 코드 빌드 및 실행
 
-#### 1) Keil 프로젝트 열기
+### 1) Keil 프로젝트 열기
 
 [Step 1: 필수 구성 요소](#Step-1-Prerequisites)의 Software란의 [X-CUBE-AZURE SDK](https://github.com/Wiznet/azure-iot-kr)를 Local 저장소에 저장하고, 다음 경로 `azure-iot-kr-master\samples\LTE\Cat.M1\en.x-cube-azure_v2\AZURE_V1.2.0\Projects\STM32L496ZG-Nucleo\Applications\Cloud\Azure\MDK-ARM`에 위치한 Keil 프로젝트를 실행합니다.
 
@@ -395,7 +392,7 @@ float temp1;
 
 ![][2]
 
-#### 2) 프로그램 빌드
+### 2) 프로그램 빌드
 
 상단 메뉴의 `Build` 및 `ReBuild` 버튼을 클릭합니다.
 
@@ -410,11 +407,15 @@ float temp1;
 
 > MBED 플랫폼 보드는 `NODE_L496ZG (E:)`와 같은 이름의 디스크 드라이브로 할당되어 있습니다. 이 곳에 생성된 펌웨어 바이너리 파일을 복사하면 됩니다.
 
-#### 3) 시리얼 터미널 연결 및 실행
+### 3) 시리얼 터미널 연결
 
 시리얼 터미널 프로그램을 실행하여 **디바이스 연결** 단계에서 확인한 보드의 COM 포트와 Baudrate 115200을 선택하여 시리얼 포트를 연결합니다.
 
 > 디버그 메시지 출력용 시리얼 포트 설정 정보: 115200-8-N-1, None
+
+
+<a name="Step-5-Execute"></a>
+## Step 5: 예제 실행 결과
 
 펌웨어가 정상적으로 업로드되면, ST AZURE Dashboard에 디바이스를 등록할 때 사용되는 `DeviceID`를 확인해야 합니다.
 
@@ -455,23 +456,23 @@ float temp1;
 [st-azure-dashboard]: ../../../../Azure_Cloud/st_azure_dashboard.md
 [raspberrypi-azure-c-sdk]: ./Azure_Cloud/raspberrypi_azure_c_sdk.md
 
-[hw-stack-nucleo]: ../../../../../images/wiot-shield-qc01-nucleo-144.png
+[hw-stack-nucleo]: ../../../../../images/wiot-shield-qc01-nucleo-144.png "Nucleo144와 WIZnet IoT Shield 결합"
 
-[hw-settings-nucleo-qc01]: ../../../../../images/WIoT-QC01_JUMP_Arduino_serialD2_D8.png
-[hw-settings-nucleo-wm01]: ../../../../../images/WIoT-WM01_JUMP_Arduino_serialD2_D8.png
-[hw-settings-nucleo-am01]: ../../../../../images/WIoT-AM01_JUMP_Arduino_serialD2_D8.png
+[hw-settings-nucleo-qc01]: ../../../../../images/WIoT-QC01_JUMP_Arduino_serialD2_D8.png "hw-settings-nucleo-qc01"
+[hw-settings-nucleo-wm01]: ../../../../../images/WIoT-WM01_JUMP_Arduino_serialD2_D8.png "hw-settings-nucleo-wm01"
+[hw-settings-nucleo-am01]: ../../../../../images/WIoT-AM01_JUMP_Arduino_serialD2_D8.png "hw-settings-nucleo-am01"
 
-[st-azure-sdk-outline]: ../../../../../images/st-azure-sdk-outline.PNG
+[st-azure-sdk-outline]: ../../../../../images/st-azure-sdk-outline.PNG "ST AZURE SDK 개요도"
 
-[build]: ../../../../../images/keil-build.png
-[1]: ../../../../../images/nucleo-stm32l496-azure-st-sdk-1.png
-[2]: ../../../../../images/nucleo-stm32l496-azure-st-sdk-2.png
-[3]: ../../../../../images/nucleo-stm32l496-azure-st-sdk-3.png
-[4]: ../../../../../images/nucleo-stm32l496-azure-st-sdk-4.png
-[5]: ../../../../../images/nucleo-stm32l496-azure-st-sdk-5.png
-[6]: ../../../../../images/nucleo-stm32l496-azure-st-sdk-6.png
-[7]: ../../../../../images/nucleo-stm32l496-azure-st-sdk-7.png
-[8]: ../../../../../images/nucleo-stm32l496-azure-st-sdk-8.png
+[build]: ../../../../../images/keil-build.png "Keil 빌드"
+[1]: ../../../../../images/nucleo-stm32l496-azure-st-sdk-1.png "장치 관리자"
+[2]: ../../../../../images/nucleo-stm32l496-azure-st-sdk-2.png "Keil 프로젝트 화면"
+[3]: ../../../../../images/nucleo-stm32l496-azure-st-sdk-3.png "Keil 프로젝트 빌드 결과"
+[4]: ../../../../../images/nucleo-stm32l496-azure-st-sdk-4.png "실행 결과_DeviceId 확인"
+[5]: ../../../../../images/nucleo-stm32l496-azure-st-sdk-5.png "실행 결과_보낼 준비 완료"
+[6]: ../../../../../images/nucleo-stm32l496-azure-st-sdk-6.png "실행 결과_데이터 보내기"
+[7]: ../../../../../images/nucleo-stm32l496-azure-st-sdk-7.png "실행 결과_데이터 주기적으로 보내기"
+[8]: ../../../../../images/nucleo-stm32l496-azure-st-sdk-8.png "실행 결과_데이터 주기적으로 보내기 종료"
 
 
 

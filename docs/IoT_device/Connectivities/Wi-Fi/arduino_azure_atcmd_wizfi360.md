@@ -239,9 +239,9 @@ char DevicePrimaryKey[] = "XXXXXXXXXXXXXXXXXX";
 
 다음 그림과 같이 Arduino Mega2560 보드와 포트를 선택하고, 컴파일을 수행합니다.
 
-![](/images/Arduino_Azure_atcmd_ide port check.png)
+![](/images/Arduino_Azure_atcmd_ide_port_check.png)
 
-![](/images/Arduino_Azure_atcmd_ide board check.png)
+![](/images/Arduino_Azure_atcmd_ide_board_check.png)
 
 컴파일이 완료 되면 다음과 같이 업로드를 수행하여 최종적으로 보드에 업로드를 수행 합니다. 업로드가 정상적으로 완료되면 'avrdude done. Thank you.' 메시지를 확인 할 수 있습니다.
 ![](/images/Arduino_Azure_atcmd_ide_upload.png)

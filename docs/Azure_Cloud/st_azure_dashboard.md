@@ -29,17 +29,17 @@
 <a name="FunctionExamplanation"></a>
 ## ST AZURE Dashboard 기능 설명
 
-#### 1) ST AZURE Dashboard 접속
+### 1) ST AZURE Dashboard 접속
 해당 [링크](https://stm32ode-v2.azurewebsites.net)를 접속하면 다음과 같이 ST AZURE Dashboard 홈페이지에 접속할 수 있습니다.
 
 ![][1]
 
-#### 2) 회원가입 및 로그인
+### 2) 회원가입 및 로그인
 좌측 메뉴의 `Sign-Up`을 클릭하여 회원가입을 한 후, 로그인을 합니다.
 
 ![][2]
 
-#### 3) 디바이스 등록
+### 3) 디바이스 등록
 디바이스를 등록하기 위해 메뉴의 `Devices`를 클릭하고 `+`버튼을 클릭합니다.
 ![][3]
 
@@ -50,7 +50,7 @@ Device Type은 `Auto-provisioned`로 선택하여 `SUBMIT`버튼을 클릭합니
 정상적으로 디바이스가 등록되고, Cat.M1 디바이스가 ST AZURE Dashboard와 연결되면 해당 디바이스의 상태가 `Connected`로 변경됩니다.
 
 ![][5]
-#### 4) 데이터 확인
+### 4) 데이터 확인
 데이터를 확인 하기 위해 메뉴의 `Telemetry`을 클릭하고, 데이터를 조회할 디바이스, 데이터, 조회 기간을 선택하신 후 오른쪽 화실표를 클릭하시면, 하단에 그래프가 출력되는 것을 확인 할 수 있습니다.
 
 본 예제는 온도데이터를 실시간으로 선택한 화면 입니다.
@@ -67,11 +67,11 @@ Device Type은 `Auto-provisioned`로 선택하여 `SUBMIT`버튼을 클릭합니
 [nucleo-stm32l496_azure-st-sdk]: ../IoT_device/Connectivities/LTE/Cat.M1/nucleo_stm32l496_azure_st_sdk_bg96.md
 [raspberrypi-azure-c-sdk]: ../IoT_device/Connectivities/LTE/Cat.M1/raspberrypi_azure_c_sdk.md
 
-[st-azure-sdk-outline]: ../../images/st-azure-sdk-outline.PNG
+[st-azure-sdk-outline]: ../../images/st-azure-sdk-outline.PNG "ST AZURE SDK 개요도"
 
-[1]: ../../images/st-azure-dashboard-1.PNG
-[2]: ../../images/st-azure-dashboard-2.PNG
-[3]: ../../images/st-azure-dashboard-3.PNG
-[4]: ../../images/st-azure-dashboard-4.PNG
-[5]: ../../images/st-azure-dashboard-5.PNG
-[6]: ../../images/st-azure-dashboard-6.PNG
+[1]: ../../images/st-azure-dashboard-1.PNG "ST AZURE Dashboard 접속 화면"
+[2]: ../../images/st-azure-dashboard-2.PNG "회원가입 및 로그인 화면"
+[3]: ../../images/st-azure-dashboard-3.PNG "디바이스 등록 화면 (1)"
+[4]: ../../images/st-azure-dashboard-4.PNG "디바이스 등록 화면 (2)"
+[5]: ../../images/st-azure-dashboard-5.PNG "디바이스 등록 및 연결 확인 화면"
+[6]: ../../images/st-azure-dashboard-6.PNG "데이터 확인 화면"

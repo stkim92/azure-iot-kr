@@ -61,7 +61,7 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
 본 문서를 따라하기에 전에 다음 항목이 준비되어야 합니다.
 
-- ** Hadrware **
+- Hadrware
 
 	- Desktop or Laptop Computer
 
@@ -71,14 +71,14 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
 	![][Link-Required_Item]
 
-- **Software**
+- Software
 
 	- Preferred Serial Terminal (TeraTerm, Hercules, etc . . .)
 
 <a name="Prepare_Device"></a>
 ## Step 2: Device 준비
 
-##### 1. Hardware 준비
+1. Hardware 준비
 
  WizFi360-EVB-Shield는 **Standalone Mode**로 사용되어 집니다. 따라서 **Micro USB**를 사용하기 위하여 다음과 같이 설정 필요합니다.
 
@@ -86,7 +86,7 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
  ![][Link-Set_Wizfi360_Evb_Shield_Sw1]
 
-##### 2. Device 연결
+2. Device 연결
 
  Hardware 설정 후, Micro 5 pin USB Cable을 이용하여 WizFi360 EVB Shield를 Desktop 혹은 Laptop Computer와 연결을 합니다.
 
@@ -105,25 +105,25 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
 **WizFi360**의 조금 더 상세한 **사용 방법**은 [**Quick Start Guide**][Link-Wizfi360-Quick_Start_Guide], **AT Command**는 [**AT Instruction Set**][Link-WizFi360-At_Instruction_Set]을 참고 바랍니다.
 
-##### 1. Mode 설정
+1. Mode 설정
 
  |  Command | Response |
  |:--------|:--------|
  | AT+CWMODE_CUR=1 | OK |
 
-##### 2. DHCP 설정
+2. DHCP 설정
 
  | Command | Response |
  |:--------|:--------|
  | AT+CWDHCP_CUR=1,1 | OK |
 
-##### 3. AP 접속
+3. AP 접속
 
  | Command | Response |
  |:--------|:--------|
  | AT+CWJAP_CUR="**ssid**","**password**" <br><br> Example : <br> AT+CWJAP_CUR="**wiznet**","**0123456789**" | WIFI CONNECTED <br> WIFI GOT IP <br><br> OK |
 
-##### 4. MQTT 연결 설정
+4. MQTT 연결 설정
 
  | Command | Response |
  |:--------|:--------|
@@ -133,19 +133,19 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
  >
  > * [SAS Token 생성하기][Link-Create-Sas-Token]
 
-##### 5. Topic 설정
+5. Topic 설정
 
  | Command | Response |
  |:--------|:--------|
  | AT+MQTTTOPIC="devices/**device_id**/messages/events/",devices/**device_id**/messages/devicebound/# <br><br> Example : <br> AT+MQTTTOPIC="devices/**MyWizFi360IoTDevice**/messages/events/","devices/**MyWizFi360IoTDevice**/messages/devicebound/#" | OK |
 
-##### 6. Broker 연결
+6. Broker 연결
 
  | Command | Response |
  |:--------|:--------|
  | AT+MQTTCON=1,"**iot_hub_host_name**",8883 <br><br> Example : <br> AT+MQTTCON=1,"**MyWizFi360IoTHub.azure-devices.net**",8883 | CONNECT <br><br> OK |
 
-##### 7. Publish Message
+7. Publish Message
 
  > Note :
  >
@@ -169,7 +169,7 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 ## Step 4: 동작 예제 결과
 
 <a name="Run_Stream_Analytics"></a>
-##### 1. Stream Analytics 작업 시작
+1. Stream Analytics 작업 시작
 
  Stream Analytics에서 **개요** > **시작** > **현재** > **시작**을 선택합니다.
 
@@ -179,7 +179,7 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
  ![][Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_3]
 
-##### 2. 출력 확인
+2. 출력 확인
 
  1) Blob Storage에서 **개요** > **컨테이너**를 선택합니다.
 

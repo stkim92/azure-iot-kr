@@ -31,31 +31,31 @@
 <a name="Create_Sas_Token"></a>
 ## SAS Token 생성하기
 
-##### 1. IoT Hub에서 **설정** > **공유 액세스 정책**을 선택합니다.
+1. IoT Hub에서 **설정** > **공유 액세스 정책**을 선택합니다.
 
  ![][Link-Create_Sas_Token_1]
 
-##### 2. **iothubowner**를 선택합니다.
+2. **iothubowner**를 선택합니다.
 
  ![][Link-Create_Sas_Token_2]
 
-##### 3. 공유 엑세스 키에서 **연결 문자열 - 기본 키**를 복사합니다.
+3. 공유 엑세스 키에서 **연결 문자열 - 기본 키**를 복사합니다.
 
  ![][Link-Create_Sas_Token_3]
 
-##### 4. **Device Explorer**를 실행합니다.
+4. **Device Explorer**를 실행합니다.
 
-##### 5. **Configure** > **Connection Information** > **IoT Hub Connection String**에 복사한 **연결 문자열 - 기본 키**를 입력하고 Update를 눌러 정보를 갱신합니다.
+5. **Configure** > **Connection Information** > **IoT Hub Connection String**에 복사한 **연결 문자열 - 기본 키**를 입력하고 Update를 눌러 정보를 갱신합니다.
 
  ![][Link-Create_Sas_Token_4]
 
  ![][Link-Create_Sas_Token_5]
 
-##### 6. **Management** > **SAS Token**을 눌러 엽니다.
+6. **Management** > **SAS Token**을 눌러 엽니다.
 
  ![][Link-Create_Sas_Token_6]
 
-##### 7. **TTL(Days)** 값 입력한 후, **Generate**를 눌러 생성합니다.
+7. **TTL(Days)** 값 입력한 후, **Generate**를 눌러 생성합니다.
 
  ![][Link-Create_Sas_Token_7]
 

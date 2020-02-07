@@ -29,9 +29,22 @@
 
 ### Software Requirement
 
-- 	MS Azure Account (Azure 구독이 아직 없는 경우 체험 무료[계정]을 만듭니다.)
 -   Preferred Serial Terminal (TeraTerm, YAT, etc.)
 -   [Azure IoT Explorer]
+
+> [**Azure Portal**][Link-Azure-Portal]에 Login을 합니다. 계정이 없는 경우, 계정 생성 후에 Login을 진행합니다.
+>
+> ※ 본 문서에는 [**체험 계정**][Link-Azure-Account-Free]으로 진행합니다.
+>
+> Azure Portal을 사용하여 IoT Hub 만들기 등 앞선 일련의 과정에 대하여 [Azure Cloud 소개][Link-Azure_Cloud_Introduction]를 참조하시기 바랍니다.
+>
+> * [Azure Portal을 사용하여 IoT Hub 만들기][Link-Create_IoT_Hub_Through_Azure_Portal]
+>
+> * [Azure Portal을 사용하여 Blob Storage 만들기][Link-Create_Blob_Storage_Through_Azure_Portal]
+>
+> * [Azure Portal을 사용하여 Stream Analytics 만들기][Link-Create_Stream_Analytics_Through_Azure_Portal]
+>
+> * [작업 입 · 출력 구성 및 변환 Query 정의][Link-Configure_Job_Input_Output_And_Define_The_Transformation_Query]
 
 <a name="Learning_Content"></a>
 ## 소개
@@ -299,7 +312,14 @@ Syntax:
 
 
 
-
+[Link-Azure-Portal]: https://portal.azure.com/
+[Link-Azure-Account-Free]: https://azure.microsoft.com/ko-kr/free/
+[Link-Data_Communication_Structure]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_data_communication_structure.png
+[Link-Azure_Cloud_Introduction]: https://github.com/Wiznet/azure-iot-kr/tree/master/docs/Azure_Cloud
+[Link-Create_IoT_Hub_Through_Azure_Portal]: https://docs.microsoft.com/ko-kr/azure/iot-hub/iot-hub-create-through-portal
+[Link-Create_Blob_Storage_Through_Azure_Portal]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_blob_storage_through_azure_portal.md
+[Link-Create_Stream_Analytics_Through_Azure_Portal]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_stream_analytics_through_azure_portal.md
+[Link-Configure_Job_Input_Output_And_Define_The_Transformation_Query]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/configure_job_input_output_and_define_the_transformation_query.md
 [계정]: https://azure.microsoft.com/ko-kr/free/
 [Azure Portal]: https://portal.azure.com/
 [WizFi360]: https://wizwiki.net/wiki/doku.php/products:wizfi360:start

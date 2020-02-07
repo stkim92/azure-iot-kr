@@ -50,7 +50,7 @@ Azure IoT Hub 준비와 IoT 디바이스 등록 과정 대해 [Azure Cloud 소�
 
 WiFi모듈 테스트를 위해 [WizFi360-EVB-Shield] Evaluation 보드를 사용되었습니다.
 
-![](/images/standalone_mqtt_atcmd_wizfi360_required_item.png)
+![](/images/mqtt_atcmd_wizfi360_required_item_1.png)
 
 <a name="Device_Prep"></a>
 ## 디바이스 준비

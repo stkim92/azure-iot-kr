@@ -309,6 +309,13 @@ Syntax:
 ![](/images/azure_iot_explorer.png)
 <a name="Next"></a>
 ## 다음 단계
+- [작업 입 · 출력 구성 및 변환 Query 정의][Link-Configure_Job_Input_Output_And_Define_The_Transformation_Query]
+
+- WizFi360 Azure AT Command를 이용한 Azure IoT Hub 연동 예제
+
+	- Mbed Example
+
+	- Arduino Example
 
 
 

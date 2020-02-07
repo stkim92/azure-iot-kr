@@ -33,7 +33,7 @@ Cat.M1, WiFi, Ethernet, Gateway를 이용하여 Azure IoT Hub에 하는 예제 �
 * Ethernet: WIZ-ASG-200을 이용한 예제 코드
 * Gateway : WizFi630을 이용한 예제 코드
 
-## Key features and Roadmap
+## Key features
 :heavy_check_mark: 준비 완료  :heavy_minus_sign: 준비중
 
 <a name="사전준비"></a>
@@ -41,7 +41,6 @@ Cat.M1, WiFi, Ethernet, Gateway를 이용하여 Azure IoT Hub에 하는 예제 �
 |         Doc        |                            Description                           |
 |:------------------:|:------------------|
 | :heavy_check_mark: | [Azure IoT Hub 만들기](https://docs.microsoft.com/ko-kr/azure/iot-hub/iot-hub-create-through-portal)
-
 
 
 <a name="Cat"></a>

@@ -335,4 +335,4 @@ Syntax:
 [Silicon Labs CP210x USB to UART Driver]: https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
 [Communicate with your IoT hub using the MQTT protocol: Using the MQTT protocol directly (as a device)]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-mqtt-support
 [Azure Cloud 소개]: https://github.com/Wiznet/azure-iot-kr/tree/master/docs/Azure_Cloud
-[Arduino Example]: https://github.com/Wiznet/azure-iot-kr/docs/IoT_device/Connectivities/Wi-Fi/arduino_azure_atcmd_wizfi360.md
+[Arduino Example]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/arduino_azure_atcmd_wizfi360.md

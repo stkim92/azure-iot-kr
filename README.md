@@ -39,19 +39,19 @@ Cat.M1, WiFi, Ethernet, Gateway를 이용하여 Azure IoT Hub에 하는 예제 �
 |:------------------:|:------------------|
 | :heavy_check_mark: | [ST MCU와 Cat.M1 모듈을 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/LTE/Cat.M1/nucleo_stm32l496_azure_st_sdk_bg96.md)
 | :heavy_minus_sign: | [라즈베리파이와 Cat.M1 모듈을 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/LTE/Cat.M1/raspberrypi_azure_c_sdk.md)
-| :heavy_minus_sign: | [PC와 Cat.M1모듈을 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/LTE/Cat.M1/WIZnet_IoT_Shield_Catm1_BG96_Standalone.md)
+| :heavy_minus_sign: | [Cat.M1 모듈의 AT 커맨드를 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/LTE/Cat.M1/WIZnet_IoT_Shield_Catm1_BG96_Standalone.md)
 
 ## WiFi
 |         Doc        |                            Description                           |
 |:------------------:|:------------------|
-| :heavy_minus_sign: | [WizFi630S를 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/Gateway/wizfi630s_azure_c_sdk.md)
-| :heavy_check_mark: | [PC와 WizFi360(MQTT AT Command)을 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_mqtt_atcmd_wizfi360.md)
-| :heavy_check_mark: | [PC와 WizFi360(Azure AT Command)을 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_azure_atcmd_wizfi360.md)
+| :heavy_minus_sign: | [WiFi(WizFi630S)모듈의 리눅스에서 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/Gateway/wizfi630s_azure_c_sdk.md)
+| :heavy_check_mark: | [WiFi(WizFi360)모듈의 AT커맨드를 이용하여 MQTT프로토콜로 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_mqtt_atcmd_wizfi360.md)
+| :heavy_check_mark: | [WiFi(WizFi360)모듈의 Azure 전용 AT커맨드로 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_azure_atcmd_wizfi360.md)
 
-## Ethernet
+## Azure sphere Gardian
 |         Doc        |                            Description                           |
 |:------------------:|:------------------|
-| :heavy_minus_sign: | [WIZ-ASG-200를 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Ethernet/wiz-asg-200_azure_sphere_sdk.md)
+| :heavy_minus_sign: | [Azure sphere Gardian(Wiz-asg-200)을 이용하여 이더넷으로 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Ethernet/wiz-asg-200_azure_sphere_sdk.md)
 
 ## Azure Cloud
 |         Doc        |                            Description                           |

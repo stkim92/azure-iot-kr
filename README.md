@@ -2,6 +2,17 @@
 이 Repository는 IoT 장치를 Cat.M1, WiFi, Ethernet을 이용하여 Azure IoT Hub에 연결하고 Azure의 다른 서비스와 연동하기 위해 작성되었습니다.
 ([docs.microsoft.com](https://docs.microsoft.com/ko-kr/) 사이트를 참고하여 작성되었습니다.)
 
+## contents
+-  [Folder Structure](#Folder Structure)
+-  [사전준비](#사전준비)
+-  [Cat.M1 통신을 이용하여 Azure IoT Hub에 연결하기](# Cat.M1 통신을 이용하여 Azure IoT Hub에 연결하기)
+-  [WiFi 통신을 이용하여 Azure IoT Hub에 연결하기](## WiFi 통신을 이용하여 Azure IoT Hub에 연결하기)
+-  [Azure Sphere Gardian(WiFi, Ethernet)을 이용하여 Azure IoT Hub에 연결하기](## Azure Sphere Gardian(WiFi, Ethernet)을 이용하여 Azure IoT Hub에 연결하기)
+-  [Azure Cloud](## Azure Cloud)
+
+
+
+
 ## Folder Structure
 
 ### /docs/IoT_device/Connectivity
@@ -22,8 +33,6 @@ Cat.M1, WiFi, Ethernet, Gateway를 이용하여 Azure IoT Hub에 하는 예제 �
 * Ethernet: WIZ-ASG-200을 이용한 예제 코드
 * Gateway : WizFi630을 이용한 예제 코드
 
-
-
 ## Key features and Roadmap
 :heavy_check_mark: 준비 완료  :heavy_minus_sign: 준비중
 
@@ -34,21 +43,21 @@ Cat.M1, WiFi, Ethernet, Gateway를 이용하여 Azure IoT Hub에 하는 예제 �
 
 
 
-## Cat.M1
+## Cat.M1 통신을 이용하여 Azure IoT Hub에 연결하기
 |         Doc        |                            Description                           |
 |:------------------:|:------------------|
 | :heavy_check_mark: | [MCU(STM32)와 Cat.M1(BG96)모듈을 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/LTE/Cat.M1/nucleo_stm32l496_azure_st_sdk_bg96.md)
 | :heavy_minus_sign: | [라즈베리파이와 Cat.M1(BG96)모듈을 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/LTE/Cat.M1/raspberrypi_azure_c_sdk.md)
 | :heavy_minus_sign: | [Cat.M1(BG96)모듈의 AT커맨드로 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/LTE/Cat.M1/WIZnet_IoT_Shield_Catm1_BG96_Standalone.md)
 
-## WiFi
+## WiFi 통신을 이용하여 Azure IoT Hub에 연결하기
 |         Doc        |                            Description                           |
 |:------------------:|:------------------|
 | :heavy_minus_sign: | [WiFi(WizFi630S)모듈의 리눅스에서 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/Gateway/wizfi630s_azure_c_sdk.md)
 | :heavy_check_mark: | [WiFi(WizFi360)모듈의 MQTT AT커맨드로 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_mqtt_atcmd_wizfi360.md)
 | :heavy_check_mark: | [WiFi(WizFi360)모듈의 Azure AT커맨드로 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_azure_atcmd_wizfi360.md)
 
-## Azure Sphere Gardian(WiFi, Ethernet)
+## Azure Sphere Gardian(WiFi, Ethernet)을 이용하여 Azure IoT Hub에 연결하기
 |         Doc        |                            Description                           |
 |:------------------:|:------------------|
 | :heavy_minus_sign: | [Azure Sphere Gardia(WIZ-AZG-200)을 이용하여 이더넷으로 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Ethernet/wiz-asg-200_azure_sphere_sdk.md)

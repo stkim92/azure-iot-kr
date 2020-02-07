@@ -63,9 +63,9 @@ Stream Analytics에 대한 내용은 다음을 참조 바랍니다.
 [Link-Azure-Portal]: https://portal.azure.com/
 [Link-Azure-Account-Free]: https://azure.microsoft.com/ko-kr/free/
 [Link-What_Is_Azure_Stream_Analytics]: https://docs.microsoft.com/ko-kr/azure/stream-analytics/stream-analytics-introduction
-[Link-Create_Stream_Analytics_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_stream_analytics_1.png
-[Link-Create_Stream_Analytics_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_stream_analytics_3.png
-[Link-Create_Stream_Analytics_5]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_stream_analytics_5.png
-[Link-Create_Stream_Analytics_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_create_stream_analytics_6.png
+[Link-Create_Stream_Analytics_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/create_stream_analytics_1.png
+[Link-Create_Stream_Analytics_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/create_stream_analytics_3.png
+[Link-Create_Stream_Analytics_5]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/create_stream_analytics_5.png
+[Link-Create_Stream_Analytics_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/create_stream_analytics_6.png
 [Link-create_blob_storage_through_azure_portal]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_blob_storage_through_azure_portal.md
 [Link-Configure_Job_Input_Output_And_Define_The_Transformation_Query]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/configure_job_input_output_and_define_the_transformation_query.md

@@ -72,9 +72,9 @@ Cat.M1, WiFi, Ethernet, Gateway를 이용하여 Azure IoT Hub에 하는 예제 �
 | :heavy_check_mark: | [Azure Cloud 소개](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/README.md)
 | :heavy_check_mark: | [ST AZURE Dashboard 가이드](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/st_azure_dashboard.md)
 | :heavy_check_mark: | [Azure Portal을 사용하여 Blob Storage 만들기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_blob_storage_through_azure_portal.md)
+| :heavy_check_mark: | [Azure Portal을 사용하여 Stream Analytics 만들기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_stream_analytics_through_azure_portal.md)
+| :heavy_check_mark: | [Azure Portal을 사용하여 Stream Analytics 작업 입 · 출력 구성 및 변환 Query 정의](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/configure_job_input_output_and_define_the_transformation_query.md)
 | :heavy_check_mark: | [SAS Token 생성하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_sas_token.md)
-| :heavy_check_mark: | [Azure Portal을 사용하여 Blob Storage 만들기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_blob_storage_through_azure_portal.md)
-| :heavy_check_mark: | [작업 입 · 출력 구성 및 변환 Query 정의](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/configure_job_input_output_and_define_the_transformation_query.md)
 
 <a name="Support"></a>
 ## Support

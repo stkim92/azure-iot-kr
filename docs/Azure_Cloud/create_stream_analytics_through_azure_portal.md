@@ -37,17 +37,17 @@ Stream Analytics에 대한 내용은 다음을 참조 바랍니다.
 <a name="Create_Stream_Analytics"></a>
 ## Stream Analytics 만들기
 
-##### 1. Azure Portal에서 **리소스 만들기** > **분석** > **Stream Analytics job**을 선택합니다.
+### 1. Azure Portal에서 **리소스 만들기** > **분석** > **Stream Analytics job**을 선택합니다.
 
  ![][Link-Create_Stream_Analytics_1]
 
  ![][Link-Create_Stream_Analytics_3]
 
-##### 2. **작업 이름**을 입력하고 나머지 항목을 다음 그림과 같이 입력 및 설정합니다.
+### 2. **작업 이름**을 입력하고 나머지 항목을 다음 그림과 같이 입력 및 설정합니다.
 
  ![][Link-Create_Stream_Analytics_5]
 
-##### 3. **만들기**를 눌러 생성합니다.
+### 3. **만들기**를 눌러 생성합니다.
 
 
 
@@ -56,7 +56,7 @@ Stream Analytics에 대한 내용은 다음을 참조 바랍니다.
 
 - [Azure Portal을 사용하여 Blob Storage 만들기][Link-create_blob_storage_through_azure_portal]
 
-- [작업 입 · 출력 구성 및 변환 Query 정의][Link-Configure_Job_Input_Output_And_Define_The_Transformation_Query]
+- [Azure Portal을 사용하여 Stream Analytics 작업 입 · 출력 구성 및 변환 Query 정의][Link-Configure_Stream_Analytics_Job_Input_Output_And_Define_The_Transformation_Query_Through_Azure_Portal]
 
 
 
@@ -68,4 +68,4 @@ Stream Analytics에 대한 내용은 다음을 참조 바랍니다.
 [Link-Create_Stream_Analytics_5]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/create_stream_analytics_5.png
 [Link-Create_Stream_Analytics_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/create_stream_analytics_6.png
 [Link-create_blob_storage_through_azure_portal]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_blob_storage_through_azure_portal.md
-[Link-Configure_Job_Input_Output_And_Define_The_Transformation_Query]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/configure_job_input_output_and_define_the_transformation_query.md
+[Link-Configure_Stream_Analytics_Job_Input_Output_And_Define_The_Transformation_Query_Through_Azure_Portal]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/configure_stream_analytics_job_input_output_and_define_the_transformation_query_through_azure_portal

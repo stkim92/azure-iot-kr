@@ -68,4 +68,4 @@ Stream Analytics에 대한 내용은 다음을 참조 바랍니다.
 [Link-Create_Stream_Analytics_5]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/create_stream_analytics_5.png
 [Link-Create_Stream_Analytics_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/create_stream_analytics_6.png
 [Link-create_blob_storage_through_azure_portal]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_blob_storage_through_azure_portal.md
-[Link-Configure_Stream_Analytics_Job_Input_Output_And_Define_The_Transformation_Query_Through_Azure_Portal]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/configure_stream_analytics_job_input_output_and_define_the_transformation_query_through_azure_portal
+[Link-Configure_Stream_Analytics_Job_Input_Output_And_Define_The_Transformation_Query_Through_Azure_Portal]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/configure_stream_analytics_job_input_output_and_define_the_transformation_query_through_azure_portal.md

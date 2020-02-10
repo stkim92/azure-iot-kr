@@ -1,4 +1,4 @@
-# Azure Cloud 소개
+# Azure Cloud 서비스 소개
 
 본 문서는 Microsoft가 제공하는 Azure Cloud 서비스와 Azure Cloud 서비스를 구성하는데 필요한 원본 자료 링크를 추가하여 설명합니다. Microsoft에서 제공하는 원본 자료의 경우, 링크 제목 앞에 '[MS]' 라고 표기하였습니다.
 

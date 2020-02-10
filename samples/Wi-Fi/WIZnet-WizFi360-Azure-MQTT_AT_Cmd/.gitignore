@@ -1,7 +1,3 @@
 .build
-.mbed
 projectfiles
 *.py*
-BUILD
-mbed-os
-dht11

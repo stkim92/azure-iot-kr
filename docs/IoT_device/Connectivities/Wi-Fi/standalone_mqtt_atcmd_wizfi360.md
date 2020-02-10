@@ -35,7 +35,7 @@
 >
 > * [Azure Portal을 사용하여 Stream Analytics 만들기][Link-Create_Stream_Analytics_Through_Azure_Portal]
 >
-> * [작업 입 · 출력 구성 및 변환 Query 정의][Link-Configure_Job_Input_Output_And_Define_The_Transformation_Query]
+> * [Azure Portal을 사용하여 Stream Analytics 작업 입 · 출력 구성 및 변환 Query 정의][Link-Configure_Stream_Analytics_Job_Input_Output_And_Define_The_Transformation_Query_Through_Azure_Portal]
 
 
 <a name="Introduction"></a>

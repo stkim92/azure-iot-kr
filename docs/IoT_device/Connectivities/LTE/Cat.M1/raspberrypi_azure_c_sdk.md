@@ -15,7 +15,7 @@
 <a name="Introduction"></a>
 ## 소개
 
-이 문서는 Ubuntu OS에 Docker를 설치하고, Raspbian Cross Compile 환경이 구성되어 있는 Docker Image를 이용하여 Raspbian에서 실행가능한 바이너리를 생성해보도록 하겠습니다.
+본 가이드는 Ubuntu OS에 Docker를 설치하고, Raspbian Cross Compile 환경이 구성되어 있는 Docker Image를 이용하여 Raspbian에서 실행가능한 바이너리를 생성해보도록 하겠습니다.
 
 생성된 바이너리를 Raspberry pi에 옮겨 실행하고 에이엠 텔레콤의 Cat.M1 외장형 모뎀을 이용하여 SK Telecom Cat.M1 망을 통해 AZURE IoT Hub로 데이터를 보내는 방법에 대하여 설명합니다.
 
@@ -73,7 +73,7 @@ sudo docker pull microsoft/iot-hub-c-raspberrypi-build
 <a name="Step-3-Build"></a>
 ## Step 3: 예제 코드 빌드
 
-### 0) 소스 코드 수정
+### 1) 소스 코드 수정
 해당 예제에 센서 데이터를 추가하려면, `iot-hub-c-raspberrypi-docker/samples/azure-iot-hub`폴더로 이동 후, `main.c`소스를 수정 해야합니다.
 
 본 가이드에서는 별도의 센서를 연결하지 않았으므로, 임의의 온도 데이터를 보내도록 수정하겠습니다.
@@ -111,7 +111,7 @@ static void sendMessageAndBlink(IOTHUB_CLIENT_LL_HANDLE iotHubClientHandle, char
 }
 ```
 
-### 1) 프로그램 빌드
+### 2) 프로그램 빌드
 
 Microsoft에서 제공하는 SDK를 Raspbian 환경에서 Cross Compile 하기위해 다음 명령을 수행합니다.
 
@@ -123,7 +123,7 @@ sudo docker run --rm -v $PWD/iot-hub-c-raspberrypi-docker/samples:/repo -it micr
 
 ![][3]
 
-### 2) 생성된 실행 가능한 바이너리를 SSH를 통해 Raspberry Pi로 이동
+### 3) 생성된 실행 가능한 바이너리를 SSH를 통해 Raspberry Pi로 이동
 
 SSH를 통해 Ubuntu OS 기반 PC에서 Raspberry pi로 파일을 전송하기 위해서는 Raspberry pi의 SSH 설정을 가능하도록 해야 하며, PC와 Raspberry pi가 같은 네트워크에 있어야 합니다. 
 
